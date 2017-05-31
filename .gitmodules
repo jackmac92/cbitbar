@@ -1,0 +1,3 @@
+[submodule "plugins/jenkinsStatus"]
+	path = plugins/jenkinsStatus
+	url = ../cbiStatusLights
