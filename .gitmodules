@@ -1,3 +1,3 @@
 [submodule "plugins/jenkinsStatus"]
 	path = plugins/jenkinsStatus
-	url = ../cbiStatusLights
+	url = git@github.com:jackmac92/cbiStatusLights.git 
