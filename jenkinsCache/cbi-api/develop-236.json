@@ -1,0 +1,104 @@
+{
+  "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+  "actions": [
+    {
+      "_class": "hudson.model.CauseAction",
+      "causes": [
+        {
+          "_class": "hudson.model.Cause$UserIdCause",
+          "shortDescription": "Started by user Ben Feltz",
+          "userId": "bfeltz",
+          "userName": "Ben Feltz"
+        }
+      ]
+    },
+    {
+      "_class": "jenkins.metrics.impl.TimeInQueueAction"
+    },
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.cps.EnvActionImpl"
+    },
+    {},
+    {},
+    {
+      "_class": "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName": {
+        "develop": {
+          "_class": "hudson.plugins.git.util.Build",
+          "buildNumber": 236,
+          "buildResult": null,
+          "marked": {
+            "SHA1": "21e06cf09f5547394e3298fb5f3b628687c31548",
+            "branch": [
+              {
+                "SHA1": "21e06cf09f5547394e3298fb5f3b628687c31548",
+                "name": "develop"
+              }
+            ]
+          },
+          "revision": {
+            "SHA1": "21e06cf09f5547394e3298fb5f3b628687c31548",
+            "branch": [
+              {
+                "SHA1": "21e06cf09f5547394e3298fb5f3b628687c31548",
+                "name": "develop"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision": {
+        "SHA1": "21e06cf09f5547394e3298fb5f3b628687c31548",
+        "branch": [
+          {
+            "SHA1": "21e06cf09f5547394e3298fb5f3b628687c31548",
+            "name": "develop"
+          }
+        ]
+      },
+      "remoteUrls": [
+        "git@github.com:cbinsights/cbi-api"
+      ],
+      "scmName": ""
+    },
+    {
+      "_class": "hudson.plugins.git.GitTagAction"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.views.FlowGraphAction"
+    },
+    {},
+    {}
+  ],
+  "artifacts": [],
+  "building": false,
+  "description": null,
+  "displayName": "#236",
+  "duration": 100779,
+  "estimatedDuration": 211553,
+  "executor": null,
+  "fullDisplayName": "Repo: CBI-API » develop #236",
+  "id": "236",
+  "keepLog": false,
+  "number": 236,
+  "queueId": 1479,
+  "result": "FAILURE",
+  "timestamp": 1497292306562,
+  "url": "https://jenkins.cbinsights.com/job/cbi-api/job/develop/236/",
+  "changeSets": [],
+  "nextBuild": {
+    "number": 237,
+    "url": "https://jenkins.cbinsights.com/job/cbi-api/job/develop/237/"
+  },
+  "previousBuild": {
+    "number": 235,
+    "url": "https://jenkins.cbinsights.com/job/cbi-api/job/develop/235/"
+  }
+}

@@ -3,8 +3,6 @@
 cleanUp() {
     rm -rf ~/bitbar
     mkdir  ~/bitbar
-    [[ -f bitbar.zip ]] && rm bitbar.zip
-    rm -rf /Applications/BitBar.app
 }
 
 insertSheBang() {
@@ -14,17 +12,18 @@ insertSheBang() {
 
 installMonitor() {
     yarn
-    webpack plugins/jenkinsStatus bitbar.20s.js --config webpack.config.js --optimize-minimize
-    insertSheBang bitbar.20s.js
-    mv -f bitbar.20s.js ~/bitbar
-    sudo chmod +x ~/bitbar/bitbar.20s.js
+    webpack plugins/jenkinsStatus bitbar.5m.js --config webpack.config.js --optimize-minimize
+    insertSheBang bitbar.5m.js
+    mv -f bitbar.5m.js ~/bitbar
+    sudo chmod +x ~/bitbar/bitbar.5m.js
 }
 
 installBitBar() {
-    [[ -d /Applications/BitBar.app ]] && rm -rf /Applications/BitBar.app
-    node installBitBar.js
-    unzip ./bitbar.zip
-    mv ./BitBar.app /Applications/BitBar.app
+    if ! [[ -f bitbar.zip ]]; then
+        node installBitBar.js
+        unzip bitbar.zip
+        mv BitBar.app /Applications/BitBar.app
+    fi
     defaults write com.matryer.BitBar pluginsDirectory "$HOME/bitbar"
     defaults write com.matryer.BitBar appHasRun -bool false
     defaults write com.matryer.BitBar userConfigDisabled -bool false

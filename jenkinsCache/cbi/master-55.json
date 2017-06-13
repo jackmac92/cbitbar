@@ -1,0 +1,160 @@
+{
+  "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+  "actions": [
+    {
+      "_class": "hudson.model.CauseAction",
+      "causes": [
+        {
+          "_class": "jenkins.branch.BranchIndexingCause",
+          "shortDescription": "Branch indexing"
+        }
+      ]
+    },
+    {
+      "_class": "jenkins.metrics.impl.TimeInQueueAction"
+    },
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.cps.EnvActionImpl"
+    },
+    {},
+    {},
+    {
+      "_class": "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName": {
+        "master": {
+          "_class": "hudson.plugins.git.util.Build",
+          "buildNumber": 55,
+          "buildResult": null,
+          "marked": {
+            "SHA1": "c281302cb6414fcc134f12f0d043df3149386504",
+            "branch": [
+              {
+                "SHA1": "c281302cb6414fcc134f12f0d043df3149386504",
+                "name": "master"
+              }
+            ]
+          },
+          "revision": {
+            "SHA1": "c281302cb6414fcc134f12f0d043df3149386504",
+            "branch": [
+              {
+                "SHA1": "c281302cb6414fcc134f12f0d043df3149386504",
+                "name": "master"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision": {
+        "SHA1": "c281302cb6414fcc134f12f0d043df3149386504",
+        "branch": [
+          {
+            "SHA1": "c281302cb6414fcc134f12f0d043df3149386504",
+            "name": "master"
+          }
+        ]
+      },
+      "remoteUrls": [
+        "git@github.com:cbinsights/cbi"
+      ],
+      "scmName": ""
+    },
+    {
+      "_class": "hudson.plugins.git.GitTagAction"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.views.FlowGraphAction"
+    },
+    {},
+    {}
+  ],
+  "artifacts": [],
+  "building": false,
+  "description": null,
+  "displayName": "#55",
+  "duration": 451221,
+  "estimatedDuration": 690128,
+  "executor": null,
+  "fullDisplayName": "Repo: CBI » master #55",
+  "id": "55",
+  "keepLog": false,
+  "number": 55,
+  "queueId": 23970,
+  "result": "SUCCESS",
+  "timestamp": 1495666046035,
+  "url": "https://jenkins.cbinsights.com/job/cbi/job/master/55/",
+  "changeSets": [
+    {
+      "_class": "hudson.plugins.git.GitChangeSetList",
+      "items": [
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "public_html/user_login.php",
+            "public_html/mycbi.php"
+          ],
+          "commitId": "b28e535e528a5e16ebd499069613f9e1ba475932",
+          "timestamp": 1495581613000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jweiner",
+            "fullName": "Jake Weiner"
+          },
+          "authorEmail": "jweiner@admins-MacBook-Pro-3.local",
+          "comment": "more error logging for mobile redirct\n",
+          "date": "2017-05-23 19:20:13 -0400",
+          "id": "b28e535e528a5e16ebd499069613f9e1ba475932",
+          "msg": "more error logging for mobile redirct",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "public_html/user_login.php"
+            },
+            {
+              "editType": "edit",
+              "file": "public_html/mycbi.php"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "public_html/mycbi.php"
+          ],
+          "commitId": "281e666d5aab82db9e3b2d4c69afc31667c284f1",
+          "timestamp": 1495653243000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/noreply",
+            "fullName": "noreply"
+          },
+          "authorEmail": "noreply@github.com",
+          "comment": "Update mycbi.php\n",
+          "date": "2017-05-24 15:14:03 -0400",
+          "id": "281e666d5aab82db9e3b2d4c69afc31667c284f1",
+          "msg": "Update mycbi.php",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "public_html/mycbi.php"
+            }
+          ]
+        }
+      ],
+      "kind": "git"
+    }
+  ],
+  "nextBuild": {
+    "number": 56,
+    "url": "https://jenkins.cbinsights.com/job/cbi/job/master/56/"
+  },
+  "previousBuild": {
+    "number": 54,
+    "url": "https://jenkins.cbinsights.com/job/cbi/job/master/54/"
+  }
+}

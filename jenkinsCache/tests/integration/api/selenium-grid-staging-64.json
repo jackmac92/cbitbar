@@ -1,0 +1,59 @@
+{
+  "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+  "actions": [
+    {
+      "_class": "hudson.model.CauseAction",
+      "causes": [
+        {
+          "_class": "hudson.model.Cause$UpstreamCause",
+          "shortDescription": "Started by upstream project \"cbi-api/release\" build number 99",
+          "upstreamBuild": 99,
+          "upstreamProject": "cbi-api/release",
+          "upstreamUrl": "job/cbi-api/job/release/"
+        }
+      ]
+    },
+    {
+      "_class": "jenkins.metrics.impl.TimeInQueueAction"
+    },
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.cps.EnvActionImpl"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.views.FlowGraphAction"
+    },
+    {},
+    {}
+  ],
+  "artifacts": [],
+  "building": false,
+  "description": null,
+  "displayName": "#64",
+  "duration": 741809,
+  "estimatedDuration": 635726,
+  "executor": null,
+  "fullDisplayName": "Tests » Integration » API » selenium-grid-staging #64",
+  "id": "64",
+  "keepLog": false,
+  "number": 64,
+  "queueId": 1213,
+  "result": "FAILURE",
+  "timestamp": 1497280055664,
+  "url": "https://jenkins.cbinsights.com/job/tests/job/integration/job/api/job/selenium-grid-staging/64/",
+  "changeSets": [],
+  "nextBuild": {
+    "number": 65,
+    "url": "https://jenkins.cbinsights.com/job/tests/job/integration/job/api/job/selenium-grid-staging/65/"
+  },
+  "previousBuild": {
+    "number": 63,
+    "url": "https://jenkins.cbinsights.com/job/tests/job/integration/job/api/job/selenium-grid-staging/63/"
+  }
+}

@@ -1,0 +1,175 @@
+{
+  "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+  "actions": [
+    {
+      "_class": "hudson.model.CauseAction",
+      "causes": [
+        {
+          "_class": "jenkins.branch.BranchIndexingCause",
+          "shortDescription": "Branch indexing"
+        }
+      ]
+    },
+    {
+      "_class": "jenkins.metrics.impl.TimeInQueueAction"
+    },
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.cps.EnvActionImpl"
+    },
+    {},
+    {},
+    {
+      "_class": "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName": {
+        "master": {
+          "_class": "hudson.plugins.git.util.Build",
+          "buildNumber": 52,
+          "buildResult": null,
+          "marked": {
+            "SHA1": "7dd86130c89b41fe7870779bd0b3fd3bc7816d30",
+            "branch": [
+              {
+                "SHA1": "7dd86130c89b41fe7870779bd0b3fd3bc7816d30",
+                "name": "master"
+              }
+            ]
+          },
+          "revision": {
+            "SHA1": "7dd86130c89b41fe7870779bd0b3fd3bc7816d30",
+            "branch": [
+              {
+                "SHA1": "7dd86130c89b41fe7870779bd0b3fd3bc7816d30",
+                "name": "master"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision": {
+        "SHA1": "7dd86130c89b41fe7870779bd0b3fd3bc7816d30",
+        "branch": [
+          {
+            "SHA1": "7dd86130c89b41fe7870779bd0b3fd3bc7816d30",
+            "name": "master"
+          }
+        ]
+      },
+      "remoteUrls": [
+        "git@github.com:cbinsights/cbi-site"
+      ],
+      "scmName": ""
+    },
+    {
+      "_class": "hudson.plugins.git.GitTagAction"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.views.FlowGraphAction"
+    },
+    {},
+    {}
+  ],
+  "artifacts": [],
+  "building": false,
+  "description": null,
+  "displayName": "#52",
+  "duration": 1107466,
+  "estimatedDuration": 1015720,
+  "executor": null,
+  "fullDisplayName": "CBI-Site » master #52",
+  "id": "52",
+  "keepLog": false,
+  "number": 52,
+  "queueId": 261,
+  "result": "SUCCESS",
+  "timestamp": 1497042578199,
+  "url": "https://jenkins.cbinsights.com/job/cbi-site/job/master/52/",
+  "changeSets": [
+    {
+      "_class": "hudson.plugins.git.GitChangeSetList",
+      "items": [
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/research-portal/assets/styles/main.less"
+          ],
+          "commitId": "f27bc5817028fbfa29da31b3717593455f04855e",
+          "timestamp": 1496944438000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/dmunerlyn",
+            "fullName": "Donovan Munerlyn"
+          },
+          "authorEmail": "dmunerlyn@cbinsights.com",
+          "comment": "Fixes wrong background color in research portal when coming from\ncollections\n",
+          "date": "2017-06-08 13:53:58 -0400",
+          "id": "f27bc5817028fbfa29da31b3717593455f04855e",
+          "msg": "Fixes wrong background color in research portal when coming from",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/research-portal/assets/styles/main.less"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/research-portal/assets/styles/main.less"
+          ],
+          "commitId": "4889eeb5cd79555e02b5582f5a310975841a34f0",
+          "timestamp": 1496945775000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/dmunerlyn",
+            "fullName": "Donovan Munerlyn"
+          },
+          "authorEmail": "dmunerlyn@cbinsights.com",
+          "comment": "Fixed .less error\n",
+          "date": "2017-06-08 14:16:15 -0400",
+          "id": "4889eeb5cd79555e02b5582f5a310975841a34f0",
+          "msg": "Fixed .less error",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/research-portal/assets/styles/main.less"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/research-portal/assets/styles/main.less"
+          ],
+          "commitId": "a9974f78794c361552836e48ddd7b5427950981a",
+          "timestamp": 1496957057000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/dmunerlyn",
+            "fullName": "Donovan Munerlyn"
+          },
+          "authorEmail": "dmunerlyn@cbinsights.com",
+          "comment": "Moved bg style to #research_portal_container\n",
+          "date": "2017-06-08 17:24:17 -0400",
+          "id": "a9974f78794c361552836e48ddd7b5427950981a",
+          "msg": "Moved bg style to #research_portal_container",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/research-portal/assets/styles/main.less"
+            }
+          ]
+        }
+      ],
+      "kind": "git"
+    }
+  ],
+  "nextBuild": null,
+  "previousBuild": {
+    "number": 51,
+    "url": "https://jenkins.cbinsights.com/job/cbi-site/job/master/51/"
+  }
+}

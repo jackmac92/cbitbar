@@ -1,0 +1,134 @@
+{
+  "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+  "actions": [
+    {
+      "_class": "hudson.model.CauseAction",
+      "causes": [
+        {
+          "_class": "hudson.model.Cause$UserIdCause",
+          "shortDescription": "Started by user Alex Parayannilam",
+          "userId": "aparayannilam",
+          "userName": "Alex Parayannilam"
+        }
+      ]
+    },
+    {
+      "_class": "jenkins.metrics.impl.TimeInQueueAction"
+    },
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.cps.EnvActionImpl"
+    },
+    {},
+    {},
+    {
+      "_class": "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName": {
+        "release": {
+          "_class": "hudson.plugins.git.util.Build",
+          "buildNumber": 208,
+          "buildResult": null,
+          "marked": {
+            "SHA1": "e5d186ba063a0ed2724f729eb3cc316fea90cd73",
+            "branch": [
+              {
+                "SHA1": "e5d186ba063a0ed2724f729eb3cc316fea90cd73",
+                "name": "release"
+              }
+            ]
+          },
+          "revision": {
+            "SHA1": "e5d186ba063a0ed2724f729eb3cc316fea90cd73",
+            "branch": [
+              {
+                "SHA1": "e5d186ba063a0ed2724f729eb3cc316fea90cd73",
+                "name": "release"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision": {
+        "SHA1": "e5d186ba063a0ed2724f729eb3cc316fea90cd73",
+        "branch": [
+          {
+            "SHA1": "e5d186ba063a0ed2724f729eb3cc316fea90cd73",
+            "name": "release"
+          }
+        ]
+      },
+      "remoteUrls": [
+        "git@github.com:cbinsights/cbi-site"
+      ],
+      "scmName": ""
+    },
+    {
+      "_class": "hudson.plugins.git.GitTagAction"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.views.FlowGraphAction"
+    },
+    {},
+    {}
+  ],
+  "artifacts": [],
+  "building": false,
+  "description": null,
+  "displayName": "#208",
+  "duration": 599588,
+  "estimatedDuration": 815775,
+  "executor": null,
+  "fullDisplayName": "CBI-Site » release #208",
+  "id": "208",
+  "keepLog": false,
+  "number": 208,
+  "queueId": 1300,
+  "result": "SUCCESS",
+  "timestamp": 1496955390548,
+  "url": "https://jenkins.cbinsights.com/job/cbi-site/job/release/208/",
+  "changeSets": [
+    {
+      "_class": "hudson.plugins.git.GitChangeSetList",
+      "items": [
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/utils/sharedConstants.js"
+          ],
+          "commitId": "5e675076fb4e25387aef19e0206ed3655ce041d7",
+          "timestamp": 1496413663000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/lzhu",
+            "fullName": "Tim Zhu"
+          },
+          "authorEmail": "zhuleijia@gmail.com",
+          "comment": "fix clone from feed undefined\n",
+          "date": "2017-06-02 10:27:43 -0400",
+          "id": "5e675076fb4e25387aef19e0206ed3655ce041d7",
+          "msg": "fix clone from feed undefined",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/utils/sharedConstants.js"
+            }
+          ]
+        }
+      ],
+      "kind": "git"
+    }
+  ],
+  "nextBuild": {
+    "number": 209,
+    "url": "https://jenkins.cbinsights.com/job/cbi-site/job/release/209/"
+  },
+  "previousBuild": {
+    "number": 207,
+    "url": "https://jenkins.cbinsights.com/job/cbi-site/job/release/207/"
+  }
+}

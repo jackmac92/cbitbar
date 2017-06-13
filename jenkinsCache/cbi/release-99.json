@@ -1,0 +1,104 @@
+{
+  "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+  "actions": [
+    {
+      "_class": "hudson.model.CauseAction",
+      "causes": [
+        {
+          "_class": "hudson.model.Cause$UserIdCause",
+          "shortDescription": "Started by user Mike Bruni",
+          "userId": "mbruni",
+          "userName": "Mike Bruni"
+        }
+      ]
+    },
+    {
+      "_class": "jenkins.metrics.impl.TimeInQueueAction"
+    },
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.cps.EnvActionImpl"
+    },
+    {},
+    {},
+    {
+      "_class": "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName": {
+        "release": {
+          "_class": "hudson.plugins.git.util.Build",
+          "buildNumber": 99,
+          "buildResult": null,
+          "marked": {
+            "SHA1": "042d484d04e877854edf739aa70e300b714f5f8f",
+            "branch": [
+              {
+                "SHA1": "042d484d04e877854edf739aa70e300b714f5f8f",
+                "name": "release"
+              }
+            ]
+          },
+          "revision": {
+            "SHA1": "042d484d04e877854edf739aa70e300b714f5f8f",
+            "branch": [
+              {
+                "SHA1": "042d484d04e877854edf739aa70e300b714f5f8f",
+                "name": "release"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision": {
+        "SHA1": "042d484d04e877854edf739aa70e300b714f5f8f",
+        "branch": [
+          {
+            "SHA1": "042d484d04e877854edf739aa70e300b714f5f8f",
+            "name": "release"
+          }
+        ]
+      },
+      "remoteUrls": [
+        "git@github.com:cbinsights/cbi"
+      ],
+      "scmName": ""
+    },
+    {
+      "_class": "hudson.plugins.git.GitTagAction"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.views.FlowGraphAction"
+    },
+    {},
+    {}
+  ],
+  "artifacts": [],
+  "building": false,
+  "description": null,
+  "displayName": "#99",
+  "duration": 432553,
+  "estimatedDuration": 776334,
+  "executor": null,
+  "fullDisplayName": "Repo: CBI » release #99",
+  "id": "99",
+  "keepLog": false,
+  "number": 99,
+  "queueId": 222,
+  "result": "SUCCESS",
+  "timestamp": 1497040782283,
+  "url": "https://jenkins.cbinsights.com/job/cbi/job/release/99/",
+  "changeSets": [],
+  "nextBuild": {
+    "number": 100,
+    "url": "https://jenkins.cbinsights.com/job/cbi/job/release/100/"
+  },
+  "previousBuild": {
+    "number": 98,
+    "url": "https://jenkins.cbinsights.com/job/cbi/job/release/98/"
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+  "actions": [
+    {
+      "_class": "hudson.model.CauseAction",
+      "causes": [
+        {
+          "_class": "hudson.model.Cause$UserIdCause",
+          "shortDescription": "Started by user Alex Parayannilam",
+          "userId": "aparayannilam",
+          "userName": "Alex Parayannilam"
+        }
+      ]
+    },
+    {
+      "_class": "jenkins.metrics.impl.TimeInQueueAction"
+    },
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.cps.EnvActionImpl"
+    },
+    {},
+    {},
+    {
+      "_class": "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName": {
+        "release": {
+          "_class": "hudson.plugins.git.util.Build",
+          "buildNumber": 96,
+          "buildResult": null,
+          "marked": {
+            "SHA1": "bf1278f3cc14430747e35193ab38b14454db1a28",
+            "branch": [
+              {
+                "SHA1": "bf1278f3cc14430747e35193ab38b14454db1a28",
+                "name": "release"
+              }
+            ]
+          },
+          "revision": {
+            "SHA1": "bf1278f3cc14430747e35193ab38b14454db1a28",
+            "branch": [
+              {
+                "SHA1": "bf1278f3cc14430747e35193ab38b14454db1a28",
+                "name": "release"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision": {
+        "SHA1": "bf1278f3cc14430747e35193ab38b14454db1a28",
+        "branch": [
+          {
+            "SHA1": "bf1278f3cc14430747e35193ab38b14454db1a28",
+            "name": "release"
+          }
+        ]
+      },
+      "remoteUrls": [
+        "git@github.com:cbinsights/cbi-api"
+      ],
+      "scmName": ""
+    },
+    {
+      "_class": "hudson.plugins.git.GitTagAction"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.views.FlowGraphAction"
+    },
+    {},
+    {}
+  ],
+  "artifacts": [],
+  "building": false,
+  "description": null,
+  "displayName": "#96",
+  "duration": 131306,
+  "estimatedDuration": 528901,
+  "executor": null,
+  "fullDisplayName": "Repo: CBI-API » release #96",
+  "id": "96",
+  "keepLog": false,
+  "number": 96,
+  "queueId": 1307,
+  "result": "FAILURE",
+  "timestamp": 1496955768272,
+  "url": "https://jenkins.cbinsights.com/job/cbi-api/job/release/96/",
+  "changeSets": [
+    {
+      "_class": "hudson.plugins.git.GitChangeSetList",
+      "items": [
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/cbi-api/data/collections_common/type.go",
+            "src/cbi-api/v1/collections_permissions/permissions.go"
+          ],
+          "commitId": "0f11185917e0ee57f30c55569910cc6f50f4d369",
+          "timestamp": 1496698553000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/bfeltz",
+            "fullName": "Ben Feltz"
+          },
+          "authorEmail": "bfeltz@Benjamins-MacBook-Pro-8.local",
+          "comment": "[CNR-1213] adding premiumValuation permission\n",
+          "date": "2017-06-05 17:35:53 -0400",
+          "id": "0f11185917e0ee57f30c55569910cc6f50f4d369",
+          "msg": "[CNR-1213] adding premiumValuation permission",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/cbi-api/data/collections_common/type.go"
+            },
+            {
+              "editType": "edit",
+              "file": "src/cbi-api/v1/collections_permissions/permissions.go"
+            }
+          ]
+        }
+      ],
+      "kind": "git"
+    }
+  ],
+  "nextBuild": {
+    "number": 97,
+    "url": "https://jenkins.cbinsights.com/job/cbi-api/job/release/97/"
+  },
+  "previousBuild": {
+    "number": 95,
+    "url": "https://jenkins.cbinsights.com/job/cbi-api/job/release/95/"
+  }
+}

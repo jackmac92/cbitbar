@@ -1,0 +1,62 @@
+{
+  "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+  "actions": [
+    {
+      "_class": "hudson.model.CauseAction",
+      "causes": [
+        {
+          "_class": "hudson.model.Cause$UserIdCause",
+          "shortDescription": "Started by user Tim Zhu",
+          "userId": "lzhu",
+          "userName": "Tim Zhu"
+        }
+      ]
+    },
+    {
+      "_class": "jenkins.metrics.impl.TimeInQueueAction"
+    },
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.cps.EnvActionImpl"
+    },
+    {},
+    {},
+    {
+      "_class": "hudson.tasks.junit.TestResultAction",
+      "failCount": 5,
+      "skipCount": 0,
+      "totalCount": 6,
+      "urlName": "testReport"
+    },
+    {},
+    {},
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.views.FlowGraphAction"
+    },
+    {},
+    {}
+  ],
+  "artifacts": [],
+  "building": false,
+  "description": null,
+  "displayName": "#112",
+  "duration": 501602,
+  "estimatedDuration": 431541,
+  "executor": null,
+  "fullDisplayName": "Tests » Integration » API » selenium-grid-dev #112",
+  "id": "112",
+  "keepLog": false,
+  "number": 112,
+  "queueId": 1618,
+  "result": "FAILURE",
+  "timestamp": 1497298359330,
+  "url": "https://jenkins.cbinsights.com/job/tests/job/integration/job/api/job/selenium-grid-dev/112/",
+  "changeSets": [],
+  "nextBuild": null,
+  "previousBuild": {
+    "number": 111,
+    "url": "https://jenkins.cbinsights.com/job/tests/job/integration/job/api/job/selenium-grid-dev/111/"
+  }
+}

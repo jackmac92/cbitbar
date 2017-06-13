@@ -1,0 +1,160 @@
+{
+  "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+  "actions": [
+    {
+      "_class": "hudson.model.CauseAction",
+      "causes": [
+        {
+          "_class": "jenkins.branch.BranchIndexingCause",
+          "shortDescription": "Branch indexing"
+        }
+      ]
+    },
+    {
+      "_class": "jenkins.metrics.impl.TimeInQueueAction"
+    },
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.cps.EnvActionImpl"
+    },
+    {},
+    {},
+    {
+      "_class": "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName": {
+        "master": {
+          "_class": "hudson.plugins.git.util.Build",
+          "buildNumber": 57,
+          "buildResult": null,
+          "marked": {
+            "SHA1": "6f4749199fc2ee871e797a69338208b38589019a",
+            "branch": [
+              {
+                "SHA1": "6f4749199fc2ee871e797a69338208b38589019a",
+                "name": "master"
+              }
+            ]
+          },
+          "revision": {
+            "SHA1": "6f4749199fc2ee871e797a69338208b38589019a",
+            "branch": [
+              {
+                "SHA1": "6f4749199fc2ee871e797a69338208b38589019a",
+                "name": "master"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision": {
+        "SHA1": "6f4749199fc2ee871e797a69338208b38589019a",
+        "branch": [
+          {
+            "SHA1": "6f4749199fc2ee871e797a69338208b38589019a",
+            "name": "master"
+          }
+        ]
+      },
+      "remoteUrls": [
+        "git@github.com:cbinsights/cbi"
+      ],
+      "scmName": ""
+    },
+    {
+      "_class": "hudson.plugins.git.GitTagAction"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.views.FlowGraphAction"
+    },
+    {},
+    {}
+  ],
+  "artifacts": [],
+  "building": false,
+  "description": null,
+  "displayName": "#57",
+  "duration": 429305,
+  "estimatedDuration": 690128,
+  "executor": null,
+  "fullDisplayName": "Repo: CBI » master #57",
+  "id": "57",
+  "keepLog": false,
+  "number": 57,
+  "queueId": 626,
+  "result": "SUCCESS",
+  "timestamp": 1496343258941,
+  "url": "https://jenkins.cbinsights.com/job/cbi/job/master/57/",
+  "changeSets": [
+    {
+      "_class": "hudson.plugins.git.GitChangeSetList",
+      "items": [
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "cbi_site_routes.txt",
+            "public_html/cbi_app_container.php"
+          ],
+          "commitId": "dd6ea1a9e4613373abb928daa0d930812b4b5ada",
+          "timestamp": 1496179069000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/sean.wang",
+            "fullName": "Sean Wang"
+          },
+          "authorEmail": "sean.wang@cbinsights.com",
+          "comment": "cbi-app container\n",
+          "date": "2017-05-30 17:17:49 -0400",
+          "id": "dd6ea1a9e4613373abb928daa0d930812b4b5ada",
+          "msg": "cbi-app container",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "cbi_site_routes.txt"
+            },
+            {
+              "editType": "add",
+              "file": "public_html/cbi_app_container.php"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "application_route.txt"
+          ],
+          "commitId": "049106fab6b12008726c1f69a432ff822eb89c4f",
+          "timestamp": 1496330889000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "update service route for cbi-site\n",
+          "date": "2017-06-01 11:28:09 -0400",
+          "id": "049106fab6b12008726c1f69a432ff822eb89c4f",
+          "msg": "update service route for cbi-site",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "application_route.txt"
+            }
+          ]
+        }
+      ],
+      "kind": "git"
+    }
+  ],
+  "nextBuild": {
+    "number": 58,
+    "url": "https://jenkins.cbinsights.com/job/cbi/job/master/58/"
+  },
+  "previousBuild": {
+    "number": 56,
+    "url": "https://jenkins.cbinsights.com/job/cbi/job/master/56/"
+  }
+}

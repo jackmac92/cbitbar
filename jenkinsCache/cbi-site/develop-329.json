@@ -1,0 +1,134 @@
+{
+  "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+  "actions": [
+    {
+      "_class": "hudson.model.CauseAction",
+      "causes": [
+        {
+          "_class": "jenkins.branch.BranchIndexingCause",
+          "shortDescription": "Branch indexing"
+        }
+      ]
+    },
+    {
+      "_class": "jenkins.metrics.impl.TimeInQueueAction"
+    },
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.cps.EnvActionImpl"
+    },
+    {},
+    {},
+    {
+      "_class": "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName": {
+        "develop": {
+          "_class": "hudson.plugins.git.util.Build",
+          "buildNumber": 329,
+          "buildResult": null,
+          "marked": {
+            "SHA1": "4a94273b0af6a7ba30ad2da4bedd482433e4818b",
+            "branch": [
+              {
+                "SHA1": "4a94273b0af6a7ba30ad2da4bedd482433e4818b",
+                "name": "develop"
+              }
+            ]
+          },
+          "revision": {
+            "SHA1": "4a94273b0af6a7ba30ad2da4bedd482433e4818b",
+            "branch": [
+              {
+                "SHA1": "4a94273b0af6a7ba30ad2da4bedd482433e4818b",
+                "name": "develop"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision": {
+        "SHA1": "4a94273b0af6a7ba30ad2da4bedd482433e4818b",
+        "branch": [
+          {
+            "SHA1": "4a94273b0af6a7ba30ad2da4bedd482433e4818b",
+            "name": "develop"
+          }
+        ]
+      },
+      "remoteUrls": [
+        "git@github.com:cbinsights/cbi-site"
+      ],
+      "scmName": ""
+    },
+    {
+      "_class": "hudson.plugins.git.GitTagAction"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.views.FlowGraphAction"
+    },
+    {},
+    {}
+  ],
+  "artifacts": [],
+  "building": false,
+  "description": null,
+  "displayName": "#329",
+  "duration": 511246,
+  "estimatedDuration": 504806,
+  "executor": null,
+  "fullDisplayName": "CBI-Site » develop #329",
+  "id": "329",
+  "keepLog": false,
+  "number": 329,
+  "queueId": 2159,
+  "result": "SUCCESS",
+  "timestamp": 1497367849438,
+  "url": "https://jenkins.cbinsights.com/job/cbi-site/job/develop/329/",
+  "changeSets": [
+    {
+      "_class": "hudson.plugins.git.GitChangeSetList",
+      "items": [
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/styles/card.less",
+            "src/client/modules/collections/components/feedCard/Card.js"
+          ],
+          "commitId": "0f5531d430a3556343a41c6de7d51903234b9293",
+          "timestamp": 1497366086000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "fix website and link css\n",
+          "date": "2017-06-13 11:01:26 -0400",
+          "id": "0f5531d430a3556343a41c6de7d51903234b9293",
+          "msg": "fix website and link css",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/styles/card.less"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Card.js"
+            }
+          ]
+        }
+      ],
+      "kind": "git"
+    }
+  ],
+  "nextBuild": null,
+  "previousBuild": {
+    "number": 328,
+    "url": "https://jenkins.cbinsights.com/job/cbi-site/job/develop/328/"
+  }
+}

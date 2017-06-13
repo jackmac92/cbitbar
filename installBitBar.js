@@ -1,35 +1,36 @@
-const fetch = require('isomorphic-fetch');
+const axios = require('axios');
+const shell = require('shelljs');
 const fs = require('fs');
 const Listr = require('listr');
 
-const getRepoInfo = repo =>
-  fetch(`https://api.github.com/repos/${repo}/releases/latest`).then(res =>
-    res.json()
+const exec = cmd =>
+  new Promise((resolve, reject) =>
+    shell.exec(cmd, code => (code === 0 ? resolve() : reject()))
   );
 
-const getRepoAssets = assetsUrl => fetch(assetsUrl).then(res => res.json());
+const getRepoInfo = repo =>
+  axios.get(`https://api.github.com/repos/${repo}/releases/latest`);
 
-const findAssetUrl = allAssets =>
-  allAssets.filter(a => !a.name.includes('Distro'))[0].browser_download_url;
+const findAssetUrl = ({ data: allAssets }) =>
+  allAssets.filter(a => !a.name.includes('Distro'))[0].url;
 
 const downloadZip = url =>
-  fetch(url).then(res => {
-    const file = fs.createWriteStream('./bitbar.zip');
-    res.body.pipe(file);
+  axios({ url, method: 'get', responseType: 'stream' }).then(response => {
+    response.data.pipe(fs.createWriteStream('./output/bitbar.zip'));
   });
 
-new Listr([
+const task = new Listr([
   {
     title: 'Getting information about releases',
     task: ctx =>
       getRepoInfo('matryer/bitbar').then(res => {
-        ctx.assetsUrl = res.assets_url;
+        ctx.assetsUrl = res.data.assets_url;
       })
   },
   {
     title: 'Finding url download latest release',
     task: ctx =>
-      getRepoAssets(ctx.assetsUrl).then(findAssetUrl).then(url => {
+      axios.get(ctx.assetsUrl).then(findAssetUrl).then(url => {
         ctx.downloadUrl = url;
       })
   },
@@ -37,8 +38,15 @@ new Listr([
     title: 'Downloading',
     task: ctx => downloadZip(ctx.downloadUrl)
   }
-])
-  .run()
-  .catch(err => {
+  // ,{
+  //   title: 'Unzipping',
+  //   task: ctx =>
+  //     exec('unzip ./output/bitbar.zip').then(console.log).catch(console.log)
+  // }
+]);
+module.exports = task;
+if (require.main === module) {
+  task.run().catch(err => {
     console.log(err);
   });
+}

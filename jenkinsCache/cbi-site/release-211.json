@@ -1,0 +1,101 @@
+{
+  "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+  "actions": [
+    {
+      "_class": "hudson.model.CauseAction",
+      "causes": [
+        {
+          "_class": "hudson.model.Cause$UserIdCause",
+          "shortDescription": "Started by user Ben Feltz",
+          "userId": "bfeltz",
+          "userName": "Ben Feltz"
+        }
+      ]
+    },
+    {
+      "_class": "jenkins.metrics.impl.TimeInQueueAction"
+    },
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.cps.EnvActionImpl"
+    },
+    {},
+    {},
+    {
+      "_class": "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName": {
+        "release": {
+          "_class": "hudson.plugins.git.util.Build",
+          "buildNumber": 211,
+          "buildResult": null,
+          "marked": {
+            "SHA1": "269d4cbc60cf4d37cd09adc99ca32b14b7e17744",
+            "branch": [
+              {
+                "SHA1": "269d4cbc60cf4d37cd09adc99ca32b14b7e17744",
+                "name": "release"
+              }
+            ]
+          },
+          "revision": {
+            "SHA1": "269d4cbc60cf4d37cd09adc99ca32b14b7e17744",
+            "branch": [
+              {
+                "SHA1": "269d4cbc60cf4d37cd09adc99ca32b14b7e17744",
+                "name": "release"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision": {
+        "SHA1": "269d4cbc60cf4d37cd09adc99ca32b14b7e17744",
+        "branch": [
+          {
+            "SHA1": "269d4cbc60cf4d37cd09adc99ca32b14b7e17744",
+            "name": "release"
+          }
+        ]
+      },
+      "remoteUrls": [
+        "git@github.com:cbinsights/cbi-site"
+      ],
+      "scmName": ""
+    },
+    {
+      "_class": "hudson.plugins.git.GitTagAction"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.views.FlowGraphAction"
+    },
+    {},
+    {}
+  ],
+  "artifacts": [],
+  "building": false,
+  "description": null,
+  "displayName": "#211",
+  "duration": 936161,
+  "estimatedDuration": 815775,
+  "executor": null,
+  "fullDisplayName": "CBI-Site » release #211",
+  "id": "211",
+  "keepLog": false,
+  "number": 211,
+  "queueId": 218,
+  "result": "SUCCESS",
+  "timestamp": 1497040487063,
+  "url": "https://jenkins.cbinsights.com/job/cbi-site/job/release/211/",
+  "changeSets": [],
+  "nextBuild": null,
+  "previousBuild": {
+    "number": 210,
+    "url": "https://jenkins.cbinsights.com/job/cbi-site/job/release/210/"
+  }
+}

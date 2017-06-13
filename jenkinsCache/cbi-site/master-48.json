@@ -1,0 +1,4534 @@
+{
+  "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+  "actions": [
+    {
+      "_class": "hudson.model.CauseAction",
+      "causes": [
+        {
+          "_class": "jenkins.branch.BranchIndexingCause",
+          "shortDescription": "Branch indexing"
+        }
+      ]
+    },
+    {
+      "_class": "jenkins.metrics.impl.TimeInQueueAction"
+    },
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.cps.EnvActionImpl"
+    },
+    {},
+    {},
+    {
+      "_class": "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName": {
+        "master": {
+          "_class": "hudson.plugins.git.util.Build",
+          "buildNumber": 48,
+          "buildResult": null,
+          "marked": {
+            "SHA1": "e76f4142af81e8292cf77b6db6312c29bcf11e0f",
+            "branch": [
+              {
+                "SHA1": "e76f4142af81e8292cf77b6db6312c29bcf11e0f",
+                "name": "master"
+              }
+            ]
+          },
+          "revision": {
+            "SHA1": "e76f4142af81e8292cf77b6db6312c29bcf11e0f",
+            "branch": [
+              {
+                "SHA1": "e76f4142af81e8292cf77b6db6312c29bcf11e0f",
+                "name": "master"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision": {
+        "SHA1": "e76f4142af81e8292cf77b6db6312c29bcf11e0f",
+        "branch": [
+          {
+            "SHA1": "e76f4142af81e8292cf77b6db6312c29bcf11e0f",
+            "name": "master"
+          }
+        ]
+      },
+      "remoteUrls": [
+        "git@github.com:cbinsights/cbi-site"
+      ],
+      "scmName": ""
+    },
+    {
+      "_class": "hudson.plugins.git.GitTagAction"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.views.FlowGraphAction"
+    },
+    {},
+    {}
+  ],
+  "artifacts": [],
+  "building": false,
+  "description": null,
+  "displayName": "#48",
+  "duration": 116582,
+  "estimatedDuration": 1015720,
+  "executor": null,
+  "fullDisplayName": "CBI-Site » master #48",
+  "id": "48",
+  "keepLog": false,
+  "number": 48,
+  "queueId": 638,
+  "result": "FAILURE",
+  "timestamp": 1496343635346,
+  "url": "https://jenkins.cbinsights.com/job/cbi-site/job/master/48/",
+  "changeSets": [
+    {
+      "_class": "hudson.plugins.git.GitChangeSetList",
+      "items": [
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/client/modules/collections/routes/index.js",
+            "src/client/modules/collections/containers/home/SingleCollection.js",
+            "src/client/modules/collections/containers/home/utils/navigateToNewTabIfCurrentOneHasNoItems.js"
+          ],
+          "commitId": "b252c746199401249af93be45ce295087679c9cd",
+          "timestamp": 1493309958000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "CNR-1138 added feed tab\n",
+          "date": "2017-04-27 12:19:18 -0400",
+          "id": "b252c746199401249af93be45ce295087679c9cd",
+          "msg": "CNR-1138 added feed tab",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/SingleCollection.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/routes/index.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/utils/navigateToNewTabIfCurrentOneHasNoItems.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/containers/home/SingleCollection.js",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/client/modules/collections/containers/home/utils/navigateToNewTabIfCurrentOneHasNoItems.js"
+          ],
+          "commitId": "9e16685d77a5222902a93824eafd94a38900e07d",
+          "timestamp": 1493321434000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "CNR-1138 updated the feed redirection\n",
+          "date": "2017-04-27 15:30:34 -0400",
+          "id": "9e16685d77a5222902a93824eafd94a38900e07d",
+          "msg": "CNR-1138 updated the feed redirection",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/utils/navigateToNewTabIfCurrentOneHasNoItems.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/SingleCollection.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/containers/home/SingleCollection.js"
+          ],
+          "commitId": "116c90614fa00916081771c79111740e0f58bdbd",
+          "timestamp": 1493321651000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "fixed linting\n",
+          "date": "2017-04-27 15:34:11 -0400",
+          "id": "116c90614fa00916081771c79111740e0f58bdbd",
+          "msg": "fixed linting",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/SingleCollection.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/containers/home/SingleCollection.js"
+          ],
+          "commitId": "f90db6da8d1a1c62265e0d5a5ec8aa8291567430",
+          "timestamp": 1493652482000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "Shortern cta message to fit feed tab\n",
+          "date": "2017-05-01 11:28:02 -0400",
+          "id": "f90db6da8d1a1c62265e0d5a5ec8aa8291567430",
+          "msg": "Shortern cta message to fit feed tab",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/SingleCollection.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "package.json",
+            "npm-shrinkwrap.json"
+          ],
+          "commitId": "635fc387d0208ae0c069f05e04530c11b004dae4",
+          "timestamp": 1493846315000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "CNR-1153 add grpc node modules\n",
+          "date": "2017-05-03 17:18:35 -0400",
+          "id": "635fc387d0208ae0c069f05e04530c11b004dae4",
+          "msg": "CNR-1153 add grpc node modules",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "npm-shrinkwrap.json"
+            },
+            {
+              "editType": "edit",
+              "file": "package.json"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/server/middleware/feedServiceCall.js",
+            "src/client/modules/common/redux/store/configure-store.prod.js",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/server/controllers/service/index.js",
+            "src/client/modules/common/redux/middleware/service-middleware.js",
+            "src/client/modules/common/redux/store/configure-store.dev.js",
+            "src/server/middleware/feed.proto",
+            "src/client/modules/collections/redux/actions/home/single-collection-actions.js"
+          ],
+          "commitId": "2990119d3ee4a633944734d87ed58e11955e8c57",
+          "timestamp": 1493850385000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "CNR-1153 added service middle ware and working feed service grpc setup\n",
+          "date": "2017-05-03 18:26:25 -0400",
+          "id": "2990119d3ee4a633944734d87ed58e11955e8c57",
+          "msg": "CNR-1153 added service middle ware and working feed service grpc setup",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/common/redux/store/configure-store.prod.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/server/middleware/feedServiceCall.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/server/controllers/service/index.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/server/middleware/feed.proto"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/common/redux/middleware/service-middleware.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/common/redux/store/configure-store.dev.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/actions/home/single-collection-actions.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/server/middleware/feedServiceCall.js",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/server/controllers/service/index.js",
+            "src/client/modules/common/redux/middleware/service-middleware.js",
+            "src/client/modules/collections/redux/actions/home/single-collection-actions.js"
+          ],
+          "commitId": "a01bd7cefba8bbc852f4aacbbcb3b4b3e635a01e",
+          "timestamp": 1493851433000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "CNR-1153 fixed linting issues\n",
+          "date": "2017-05-03 18:43:53 -0400",
+          "id": "a01bd7cefba8bbc852f4aacbbcb3b4b3e635a01e",
+          "msg": "CNR-1153 fixed linting issues",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/server/controllers/service/index.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/actions/home/single-collection-actions.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/feedServiceCall.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/common/redux/middleware/service-middleware.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/redux/reducers/home/feed-reducer.js",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/client/modules/collections/redux/actions/home/feed-actions.js",
+            "src/client/modules/collections/redux/reducers/home/single-collection-reducer.js",
+            "src/client/modules/collections/redux/actions/home/single-collection-actions.js",
+            "src/client/modules/collections/redux/reducers/home/__tests__/single-collection-reducer.spec.js"
+          ],
+          "commitId": "678127d2cfed7e43375fcd2550d7d83175b70ee7",
+          "timestamp": 1493854237000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "CNR-1153 added actions and reducers\n",
+          "date": "2017-05-03 19:30:37 -0400",
+          "id": "678127d2cfed7e43375fcd2550d7d83175b70ee7",
+          "msg": "CNR-1153 added actions and reducers",
+          "paths": [
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/redux/reducers/home/feed-reducer.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/reducers/home/single-collection-reducer.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/redux/actions/home/feed-actions.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/actions/home/single-collection-actions.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/reducers/home/__tests__/single-collection-reducer.spec.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/server/middleware/feedServiceCall.js",
+            "src/server/config/index.js",
+            "src/server/middleware/feed.proto",
+            "src/server/middleware/protos/feed.proto"
+          ],
+          "commitId": "14d67f8d810c6b0be16980b2e40b933bfe0f03f1",
+          "timestamp": 1493910011000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "CNR-1153 added protos folder and config setup\n",
+          "date": "2017-05-04 11:00:11 -0400",
+          "id": "14d67f8d810c6b0be16980b2e40b933bfe0f03f1",
+          "msg": "CNR-1153 added protos folder and config setup",
+          "paths": [
+            {
+              "editType": "add",
+              "file": "src/server/middleware/protos/feed.proto"
+            },
+            {
+              "editType": "edit",
+              "file": "src/server/config/index.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/feedServiceCall.js"
+            },
+            {
+              "editType": "delete",
+              "file": "src/server/middleware/feed.proto"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/server/middleware/protos/feed.proto"
+          ],
+          "commitId": "ec3792923af8a95b6e810dad4237ecf43bf3a953",
+          "timestamp": 1493926261000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "CNR-1153 updated feed proto\n",
+          "date": "2017-05-04 15:31:01 -0400",
+          "id": "ec3792923af8a95b6e810dad4237ecf43bf3a953",
+          "msg": "CNR-1153 updated feed proto",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/protos/feed.proto"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/server/middleware/feedServiceCall.js",
+            "src/server/middleware/protos/feed.proto",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+          ],
+          "commitId": "fe256f9465a0ac7f6da3a9dc6c11e9ea54a49ce8",
+          "timestamp": 1493929113000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "CNR-1153 added list to feed tab and updated proto\n",
+          "date": "2017-05-04 16:18:33 -0400",
+          "id": "fe256f9465a0ac7f6da3a9dc6c11e9ea54a49ce8",
+          "msg": "CNR-1153 added list to feed tab and updated proto",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/protos/feed.proto"
+            },
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/feedServiceCall.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/redux/actions/home/feed-actions.js",
+            "src/client/modules/collections/redux/reducers/home/single-collection-reducer.js",
+            "src/server/middleware/protos/feed.proto",
+            "src/client/modules/collections/redux/reducers/home/__tests__/single-collection-reducer.spec.js"
+          ],
+          "commitId": "e1bcae979e2495d673cd708e5388054222ae5c66",
+          "timestamp": 1494259252000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "updated proto and reducer\n",
+          "date": "2017-05-08 12:00:52 -0400",
+          "id": "e1bcae979e2495d673cd708e5388054222ae5c66",
+          "msg": "updated proto and reducer",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/actions/home/feed-actions.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/reducers/home/__tests__/single-collection-reducer.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/reducers/home/single-collection-reducer.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/protos/feed.proto"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/server/utils/findServiceAddress.js",
+            "src/server/config/index.js"
+          ],
+          "commitId": "76dfa5588bbd7d7fc59cd4f18a433ebc596313c6",
+          "timestamp": 1494273107000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "CNR-1153 added consul service address look up\n",
+          "date": "2017-05-08 15:51:47 -0400",
+          "id": "76dfa5588bbd7d7fc59cd4f18a433ebc596313c6",
+          "msg": "CNR-1153 added consul service address look up",
+          "paths": [
+            {
+              "editType": "add",
+              "file": "src/server/utils/findServiceAddress.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/server/config/index.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/server/middleware/feedServiceCall.js"
+          ],
+          "commitId": "06ce8f9824dd240147469bcf23c42f3c1476432f",
+          "timestamp": 1494273388000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "update feed service api call\n",
+          "date": "2017-05-08 15:56:28 -0400",
+          "id": "06ce8f9824dd240147469bcf23c42f3c1476432f",
+          "msg": "update feed service api call",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/feedServiceCall.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "package.json",
+            "src/server/config/index.js",
+            "npm-shrinkwrap.json"
+          ],
+          "commitId": "508204878c5c74b8114ca1312fb0e7ff40d01b1c",
+          "timestamp": 1494274343000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "added dns package and updated config\n",
+          "date": "2017-05-08 16:12:23 -0400",
+          "id": "508204878c5c74b8114ca1312fb0e7ff40d01b1c",
+          "msg": "added dns package and updated config",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/server/config/index.js"
+            },
+            {
+              "editType": "edit",
+              "file": "npm-shrinkwrap.json"
+            },
+            {
+              "editType": "edit",
+              "file": "package.json"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/server/config/index.js"
+          ],
+          "commitId": "ac5f2db98d80df0000f63c86aa568ef1659930c9",
+          "timestamp": 1494356803000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "check if localhost\n",
+          "date": "2017-05-09 15:06:43 -0400",
+          "id": "ac5f2db98d80df0000f63c86aa568ef1659930c9",
+          "msg": "check if localhost",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/server/config/index.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/server/utils/findServiceAddress.js"
+          ],
+          "commitId": "d287edaa6e21475c794fafeb6c254667b745cbc3",
+          "timestamp": 1494366883000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "update feed service\n",
+          "date": "2017-05-09 17:54:43 -0400",
+          "id": "d287edaa6e21475c794fafeb6c254667b745cbc3",
+          "msg": "update feed service",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/server/utils/findServiceAddress.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/server/middleware/feedServiceCall.js"
+          ],
+          "commitId": "a0fc55b45ea7f449ad85ef9b435e47ce5555323c",
+          "timestamp": 1494430772000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "adding logging to get server address\n",
+          "date": "2017-05-10 11:39:32 -0400",
+          "id": "a0fc55b45ea7f449ad85ef9b435e47ce5555323c",
+          "msg": "adding logging to get server address",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/feedServiceCall.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/server/middleware/feedServiceCall.js"
+          ],
+          "commitId": "4a3155ea83a61daba04aa7c9506b631642903586",
+          "timestamp": 1494431779000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "use winston logging\n",
+          "date": "2017-05-10 11:56:19 -0400",
+          "id": "4a3155ea83a61daba04aa7c9506b631642903586",
+          "msg": "use winston logging",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/feedServiceCall.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/server/utils/findServiceAddress.js",
+            "src/server/middleware/feedServiceCall.js",
+            "package.json",
+            "src/server/config/index.js"
+          ],
+          "commitId": "d36e41e8ca6e6cebc07335fc0691830496650867",
+          "timestamp": 1494447653000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "update to do http request\n",
+          "date": "2017-05-10 16:20:53 -0400",
+          "id": "d36e41e8ca6e6cebc07335fc0691830496650867",
+          "msg": "update to do http request",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/server/utils/findServiceAddress.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/feedServiceCall.js"
+            },
+            {
+              "editType": "edit",
+              "file": "package.json"
+            },
+            {
+              "editType": "edit",
+              "file": "src/server/config/index.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/server/middleware/feedServiceCall.js",
+            "src/server/utils/findServiceAddress.js"
+          ],
+          "commitId": "42ae34e0e569cf767f4c9b1d9ff2142955b7e155",
+          "timestamp": 1494448165000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "fix lint errors\n",
+          "date": "2017-05-10 16:29:25 -0400",
+          "id": "42ae34e0e569cf767f4c9b1d9ff2142955b7e155",
+          "msg": "fix lint errors",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/feedServiceCall.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/server/utils/findServiceAddress.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/server/middleware/feedServiceCall.js",
+            "src/server/controllers/service/index.js"
+          ],
+          "commitId": "7bf9e2ba3b2a0fdd8dce74414d4c0db5985e1fa6",
+          "timestamp": 1494516045000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "fixed idUser for the feed service\n",
+          "date": "2017-05-11 11:20:45 -0400",
+          "id": "7bf9e2ba3b2a0fdd8dce74414d4c0db5985e1fa6",
+          "msg": "fixed idUser for the feed service",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/server/controllers/service/index.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/feedServiceCall.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/server/middleware/feedServiceCall.js",
+            "src/server/controllers/service/index.js"
+          ],
+          "commitId": "9ec75ec393002af5c349d064008a2a9dc3dfef53",
+          "timestamp": 1494517684000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "reorder index\n",
+          "date": "2017-05-11 11:48:04 -0400",
+          "id": "9ec75ec393002af5c349d064008a2a9dc3dfef53",
+          "msg": "reorder index",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/server/controllers/service/index.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/feedServiceCall.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/server/middleware/feedServiceCall.js",
+            "src/server/controllers/service/index.js"
+          ],
+          "commitId": "62a87e7490c2a0184ef398e0c0a008ae9e26299f",
+          "timestamp": 1494521677000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "getting session from cookie\n",
+          "date": "2017-05-11 12:54:37 -0400",
+          "id": "62a87e7490c2a0184ef398e0c0a008ae9e26299f",
+          "msg": "getting session from cookie",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/server/controllers/service/index.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/feedServiceCall.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/server/middleware/feedServiceCall.js",
+            "src/server/controllers/service/index.js",
+            "src/client/modules/common/redux/middleware/service-middleware.js"
+          ],
+          "commitId": "4811b291c92794c3065ed8609adbf274aa71dfb7",
+          "timestamp": 1494525353000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "updated credentials in fetch call\n",
+          "date": "2017-05-11 13:55:53 -0400",
+          "id": "4811b291c92794c3065ed8609adbf274aa71dfb7",
+          "msg": "updated credentials in fetch call",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/feedServiceCall.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/common/redux/middleware/service-middleware.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/server/controllers/service/index.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/containers/home/SingleCollection.js",
+            "src/server/middleware/protos/feed.proto"
+          ],
+          "commitId": "cc923f6ee440b8bb48d295c278876bd889becfeb",
+          "timestamp": 1494533631000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "fixed the feed tab link and updated feed proto\n",
+          "date": "2017-05-11 16:13:51 -0400",
+          "id": "cc923f6ee440b8bb48d295c278876bd889becfeb",
+          "msg": "fixed the feed tab link and updated feed proto",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/protos/feed.proto"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/SingleCollection.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/server/middleware/protos/feed.proto"
+          ],
+          "commitId": "72857e4cd6a8f0f86871be604d07c78b58a98d89",
+          "timestamp": 1494534432000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "updated feed proto\n",
+          "date": "2017-05-11 16:27:12 -0400",
+          "id": "72857e4cd6a8f0f86871be604d07c78b58a98d89",
+          "msg": "updated feed proto",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/protos/feed.proto"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/server/middleware/feedServiceCall.js",
+            "src/client/modules/collections/containers/home/SingleCollection.js",
+            "src/server/config/index.js"
+          ],
+          "commitId": "567c7202d620a1e3f36509655a53450933df4591",
+          "timestamp": 1494535322000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "remove feed tab click for now and update consul dns\n",
+          "date": "2017-05-11 16:42:02 -0400",
+          "id": "567c7202d620a1e3f36509655a53450933df4591",
+          "msg": "remove feed tab click for now and update consul dns",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/server/config/index.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/feedServiceCall.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/SingleCollection.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/suggestions/SuggestionsCompany.js",
+            "src/client/modules/collections/components/customize-rec/CustomizeRec.js"
+          ],
+          "commitId": "1e1b20aacf246dbe8bff370b14cb6bf52254f418",
+          "timestamp": 1494536026000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "add data-test for sugg pref wd test\n",
+          "date": "2017-05-11 16:53:46 -0400",
+          "id": "1e1b20aacf246dbe8bff370b14cb6bf52254f418",
+          "msg": "add data-test for sugg pref wd test",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/suggestions/SuggestionsCompany.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/customize-rec/CustomizeRec.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            ".gitignore"
+          ],
+          "commitId": "d085019e330ac79e6fd94091f45b892a3ea51165",
+          "timestamp": 1494536060000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "adding .env to gitignore and removing .env file from repo\n- env files should not be committed\n",
+          "date": "2017-05-11 16:54:20 -0400",
+          "id": "d085019e330ac79e6fd94091f45b892a3ea51165",
+          "msg": "adding .env to gitignore and removing .env file from repo",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": ".gitignore"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/containers/home/item-pages/FeedPage.js",
+            "src/client/modules/collections/components/feedCard/CardTypes.js",
+            "src/client/modules/collections/components/feedCard/Cards/Test.js",
+            "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitions.js",
+            "src/client/modules/collections/containers/home/SingleCollection.js",
+            "src/client/modules/collections/redux/actions/home/single-collection-actions.js",
+            "src/client/modules/collections/components/feedCard/styles/card.less",
+            "src/client/modules/collections/redux/reducers/home/single-collection-reducer.js",
+            "src/client/modules/collections/components/feedCard/Cards/Financing.js",
+            "src/client/modules/collections/components/feedCard/Cards/index.js",
+            "src/client/assets/styles/main.less",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/client/modules/collections/components/feedCard/Card.js",
+            "src/client/modules/collections/components/feedCard/Cards/Funding.js",
+            "src/client/modules/collections/components/feedCard/Cards/IPO.js"
+          ],
+          "commitId": "07d457905e5069e6cba78f5c2a26200a061a41e6",
+          "timestamp": 1494536163000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "adding stubs of cards\n",
+          "date": "2017-05-11 16:56:03 -0400",
+          "id": "07d457905e5069e6cba78f5c2a26200a061a41e6",
+          "msg": "adding stubs of cards",
+          "paths": [
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/containers/home/item-pages/FeedPage.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitions.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/actions/home/single-collection-actions.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/index.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/CardTypes.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Financing.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/assets/styles/main.less"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/SingleCollection.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/IPO.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Card.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Test.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/reducers/home/single-collection-reducer.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/styles/card.less"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Funding.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/Test.js",
+            "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitions.js",
+            "src/client/modules/collections/components/feedCard/styles/card.less",
+            "src/client/assets/images/13x13_sprites.png",
+            "src/client/modules/collections/components/feedCard/Cards/Financing.js",
+            "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/ListTruncate.js",
+            "src/client/assets/images/16x16_sprites.png",
+            "src/client/assets/styles/cbi-icons/13xIcons.less",
+            "src/client/assets/styles/main.less",
+            "src/client/modules/collections/components/feedCard/Card.js",
+            "src/client/modules/collections/components/feedCard/Cards/Funding.js",
+            "src/client/modules/collections/components/feedCard/Cards/IPO.js",
+            "src/client/assets/styles/cbi-icons/16xIcons.less",
+            "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/DescriptionTruncate.js"
+          ],
+          "commitId": "4ecdbc602beb67c2ab0f22b92546bfac6cca43a7",
+          "timestamp": 1494536164000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "adding funding card work and sprites for icons\n",
+          "date": "2017-05-11 16:56:04 -0400",
+          "id": "4ecdbc602beb67c2ab0f22b92546bfac6cca43a7",
+          "msg": "adding funding card work and sprites for icons",
+          "paths": [
+            {
+              "editType": "add",
+              "file": "src/client/assets/styles/cbi-icons/13xIcons.less"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitions.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Financing.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/ListTruncate.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/IPO.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/assets/styles/cbi-icons/16xIcons.less"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Card.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Funding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Test.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/styles/card.less"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/assets/images/16x16_sprites.png"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/DescriptionTruncate.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/assets/styles/main.less"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/assets/images/13x13_sprites.png"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/CardTypes.js",
+            "src/client/modules/collections/components/feedCard/Cards/Test.js",
+            "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitions.js",
+            "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/ExpandedList.js",
+            "src/client/modules/collections/components/feedCard/styles/card.less",
+            "src/client/modules/collections/components/feedCard/Cards/CTAs/ExpandCardCTA.js",
+            "src/client/modules/collections/components/feedCard/Cards/Comments/Comments.js",
+            "src/client/modules/collections/components/feedCard/Cards/Modals/FundingsModal.js",
+            "src/client/modules/collections/components/feedCard/Cards/Financing.js",
+            "src/client/modules/collections/components/feedCard/Cards/Articles/ArticleSources.js",
+            "src/client/modules/collections/components/feedCard/Cards/Comments/UserComment.js",
+            "src/client/modules/collections/components/feedCard/Card.js",
+            "src/client/modules/collections/components/feedCard/Cards/Funding.js",
+            "src/client/modules/collections/components/feedCard/Cards/Modals/DealModal.js",
+            "src/client/modules/collections/components/feedCard/Cards/IPO.js",
+            "src/client/modules/collections/components/feedCard/Cards/CTAs/GenericCTA.js",
+            "src/client/modules/collections/components/feedCard/Cards/Comments/AddComment.js",
+            "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/DescriptionTruncate.js"
+          ],
+          "commitId": "c11f36a2a5473678f1fbd59ae94b16f999670253",
+          "timestamp": 1494536270000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "adding funding feed card\n",
+          "date": "2017-05-11 16:57:50 -0400",
+          "id": "c11f36a2a5473678f1fbd59ae94b16f999670253",
+          "msg": "adding funding feed card",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/styles/card.less"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/CTAs/ExpandCardCTA.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Comments/AddComment.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Modals/FundingsModal.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Card.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitions.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/ExpandedList.js"
+            },
+            {
+              "editType": "delete",
+              "file": "src/client/modules/collections/components/feedCard/CardTypes.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/DescriptionTruncate.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/CTAs/GenericCTA.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Modals/DealModal.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Funding.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Comments/Comments.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Test.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Financing.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Articles/ArticleSources.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Comments/UserComment.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/IPO.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/Articles/ArticleSources.js",
+            "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/ListTruncate.js",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/ExpandedList.js",
+            "src/client/modules/collections/components/feedCard/Cards/Funding.js",
+            "src/client/modules/collections/components/feedCard/Card.js",
+            "src/client/modules/collections/components/feedCard/Cards/Modals/DealModal.js",
+            "src/client/modules/collections/components/feedCard/styles/card.less",
+            "src/client/modules/collections/components/feedCard/Cards/Modals/FundingsModal.js"
+          ],
+          "commitId": "49af40a639737faefb31ee9ebc889455d76f8e44",
+          "timestamp": 1494536580000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1140] adding more view stubs getting Funding Card functional\n",
+          "date": "2017-05-11 17:03:00 -0400",
+          "id": "49af40a639737faefb31ee9ebc889455d76f8e44",
+          "msg": "[CNR-1140] adding more view stubs getting Funding Card functional",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Modals/FundingsModal.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/ExpandedList.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Modals/DealModal.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Articles/ArticleSources.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/ListTruncate.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/styles/card.less"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Funding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Card.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/styles/card.less",
+            "src/client/modules/collections/components/feedCard/Card.js",
+            "src/client/modules/collections/components/feedCard/Cards/Funding.js",
+            "src/client/modules/collections/components/feedCard/Cards/Modals/FundingsModal.js"
+          ],
+          "commitId": "f36530da5e3fbedc919225306b2dc1199587fcf4",
+          "timestamp": 1494536581000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1140] getting styles and valuation in line after refactor\n",
+          "date": "2017-05-11 17:03:01 -0400",
+          "id": "f36530da5e3fbedc919225306b2dc1199587fcf4",
+          "msg": "[CNR-1140] getting styles and valuation in line after refactor",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Card.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/styles/card.less"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Funding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Modals/FundingsModal.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/server/middleware/feed.proto",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/client/modules/collections/redux/actions/home/single-collection-actions.js"
+          ],
+          "commitId": "e16a125fd513c710a71649a8ce42fc4d20278aea",
+          "timestamp": 1494536968000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "CNR-1153 added service middle ware and working feed service grpc setup\n",
+          "date": "2017-05-11 17:09:28 -0400",
+          "id": "e16a125fd513c710a71649a8ce42fc4d20278aea",
+          "msg": "CNR-1153 added service middle ware and working feed service grpc setup",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/actions/home/single-collection-actions.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/server/middleware/feed.proto"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/Articles/ArticleSources.js",
+            "src/client/modules/collections/containers/home/item-pages/FeedPage.js",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/client/modules/collections/components/feedCard/Cards/Comments/UserComment.js",
+            "src/client/modules/collections/containers/home/SingleCollection.js",
+            "src/client/modules/collections/components/feedCard/Cards/Funding.js",
+            "src/client/modules/collections/components/feedCard/Card.js",
+            "src/client/modules/collections/components/feedCard/Cards/Comments/Comments.js",
+            "src/client/modules/collections/redux/reducers/home/single-collection-reducer.js",
+            "src/client/modules/collections/components/feedCard/Cards/Comments/AddComment.js",
+            "src/client/modules/collections/components/feedCard/Cards/Modals/FundingsModal.js"
+          ],
+          "commitId": "8f9174f70ffd12daa7ce5790add8d5ffc95ba7db",
+          "timestamp": 1494537123000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1140] addressing linting errors\n",
+          "date": "2017-05-11 17:12:03 -0400",
+          "id": "8f9174f70ffd12daa7ce5790add8d5ffc95ba7db",
+          "msg": "[CNR-1140] addressing linting errors",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/reducers/home/single-collection-reducer.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-pages/FeedPage.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Comments/AddComment.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Modals/FundingsModal.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Funding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Card.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/SingleCollection.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Comments/UserComment.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Articles/ArticleSources.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Comments/Comments.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/redux/actions/home/single-collection-actions.js"
+          ],
+          "commitId": "52bd45cc0c8613e5e1c2b7ebc3fbb3ab2adbed69",
+          "timestamp": 1494537188000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "CNR-1153 fixed linting issues\n",
+          "date": "2017-05-11 17:13:08 -0400",
+          "id": "52bd45cc0c8613e5e1c2b7ebc3fbb3ab2adbed69",
+          "msg": "CNR-1153 fixed linting issues",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/actions/home/single-collection-actions.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/redux/reducers/home/single-collection-reducer.js"
+          ],
+          "commitId": "fd08c37d82ea947d4e9967140569386102e34b02",
+          "timestamp": 1494537188000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1140] fixing tests\n",
+          "date": "2017-05-11 17:13:08 -0400",
+          "id": "fd08c37d82ea947d4e9967140569386102e34b02",
+          "msg": "[CNR-1140] fixing tests",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/reducers/home/single-collection-reducer.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/redux/reducers/home/__tests__/single-collection-reducer.spec.js"
+          ],
+          "commitId": "f7c1ebfa69593ebdd9d15104a68632cdc4eb2f99",
+          "timestamp": 1494537188000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1140] adding tests to get build passing\n",
+          "date": "2017-05-11 17:13:08 -0400",
+          "id": "f7c1ebfa69593ebdd9d15104a68632cdc4eb2f99",
+          "msg": "[CNR-1140] adding tests to get build passing",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/reducers/home/__tests__/single-collection-reducer.spec.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/client/modules/collections/redux/reducers/home/single-collection-reducer.js",
+            "src/client/modules/collections/redux/actions/home/single-collection-actions.js",
+            "src/client/modules/collections/redux/reducers/home/__tests__/single-collection-reducer.spec.js"
+          ],
+          "commitId": "925e9fd1dd4b3c68a0356a3c699569fc221efc9b",
+          "timestamp": 1494537512000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "CNR-1153 added actions and reducers\n",
+          "date": "2017-05-11 17:18:32 -0400",
+          "id": "925e9fd1dd4b3c68a0356a3c699569fc221efc9b",
+          "msg": "CNR-1153 added actions and reducers",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/reducers/home/single-collection-reducer.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/reducers/home/__tests__/single-collection-reducer.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/actions/home/single-collection-actions.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/styles/card.less"
+          ],
+          "commitId": "26ff529b5c955cfff2ad6f9121a4593ceebb441e",
+          "timestamp": 1494537512000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1140] styles stubs for animated expand - not finished to fix dev\n",
+          "date": "2017-05-11 17:18:32 -0400",
+          "id": "26ff529b5c955cfff2ad6f9121a4593ceebb441e",
+          "msg": "[CNR-1140] styles stubs for animated expand - not finished to fix dev",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/styles/card.less"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/server/middleware/feed.proto",
+            "src/server/config/index.js"
+          ],
+          "commitId": "077bafcdd206c8897cb45907b54a518a323cf617",
+          "timestamp": 1494537828000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "CNR-1153 added protos folder and config setup\n",
+          "date": "2017-05-11 17:23:48 -0400",
+          "id": "077bafcdd206c8897cb45907b54a518a323cf617",
+          "msg": "CNR-1153 added protos folder and config setup",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/feed.proto"
+            },
+            {
+              "editType": "edit",
+              "file": "src/server/config/index.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/__tests__/Card.spec.js",
+            "src/client/modules/collections/components/feedCard/__tests__/Funding.spec.js",
+            "src/client/modules/collections/components/feedCard/Cards/index.js",
+            "src/client/modules/collections/components/feedCard/__tests__/DealModal.spec.js",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/client/modules/collections/components/feedCard/__tests__/ExpandCardCTA.spec.js",
+            "src/client/modules/collections/components/feedCard/__tests__/FundingsModal.spec.js",
+            "src/client/modules/collections/components/feedCard/__tests__/Comments.spec.js",
+            "src/client/modules/collections/components/feedCard/__tests__/GenericCTA.spec.js",
+            "src/client/modules/collections/components/feedCard/__tests__/ArticleSources.spec.js"
+          ],
+          "commitId": "78e48fba62c21eba45af6a7c35f3e909c7120743",
+          "timestamp": 1494537828000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1140] adding test stubs and prepping for redux tie in\n",
+          "date": "2017-05-11 17:23:48 -0400",
+          "id": "78e48fba62c21eba45af6a7c35f3e909c7120743",
+          "msg": "[CNR-1140] adding test stubs and prepping for redux tie in",
+          "paths": [
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/ExpandCardCTA.spec.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/Funding.spec.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/GenericCTA.spec.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/ArticleSources.spec.js"
+            },
+            {
+              "editType": "delete",
+              "file": "src/client/modules/collections/components/feedCard/Cards/index.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/Comments.spec.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/Card.spec.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/DealModal.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/FundingsModal.spec.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/server/middleware/feedServiceCall.js",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+          ],
+          "commitId": "59e8d1c189e2d265e50112dbd08ed4bf7b4efb04",
+          "timestamp": 1494538214000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "CNR-1153 added list to feed tab and updated proto\n",
+          "date": "2017-05-11 17:30:14 -0400",
+          "id": "59e8d1c189e2d265e50112dbd08ed4bf7b4efb04",
+          "msg": "CNR-1153 added list to feed tab and updated proto",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/feedServiceCall.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/__tests__/Card.spec.js"
+          ],
+          "commitId": "d5ce92be77202dfe2722e0eca16c78c6d98213e7",
+          "timestamp": 1494538214000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1140] addming more testing stubs\n",
+          "date": "2017-05-11 17:30:14 -0400",
+          "id": "d5ce92be77202dfe2722e0eca16c78c6d98213e7",
+          "msg": "[CNR-1140] addming more testing stubs",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/Card.spec.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/server/middleware/feedServiceCall.js",
+            "src/client/modules/collections/components/feedCard/Cards/CTAs/ExpandCardCTA.js",
+            "src/client/modules/collections/components/feedCard/Cards/Funding.js",
+            "src/client/modules/collections/components/feedCard/Card.js",
+            "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/DescriptionTruncate.js"
+          ],
+          "commitId": "9bffc70fc1023082942ae6e8cda3bfc174ce82a3",
+          "timestamp": 1494538214000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[cnr-1140] adding changes to align with dev. prepping for feed service\n",
+          "date": "2017-05-11 17:30:14 -0400",
+          "id": "9bffc70fc1023082942ae6e8cda3bfc174ce82a3",
+          "msg": "[cnr-1140] adding changes to align with dev. prepping for feed service",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/DescriptionTruncate.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Funding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/CTAs/ExpandCardCTA.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Card.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/feedServiceCall.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/Articles/ArticleSources.js",
+            "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/ListTruncate.js",
+            "src/server/middleware/feedServiceCall.js",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/client/modules/collections/components/feedCard/CardTypes.js",
+            "src/client/modules/collections/components/feedCard/Card.js",
+            "src/client/modules/collections/components/feedCard/Cards/Funding.js",
+            "src/client/modules/collections/components/feedCard/styles/card.less",
+            "src/client/modules/collections/redux/reducers/home/single-collection-reducer.js"
+          ],
+          "commitId": "f8ffaa4dd03c323229e7bae09ff344207b33c252",
+          "timestamp": 1494538387000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1140]getting feed service integrated into cards\n",
+          "date": "2017-05-11 17:33:07 -0400",
+          "id": "f8ffaa4dd03c323229e7bae09ff344207b33c252",
+          "msg": "[CNR-1140]getting feed service integrated into cards",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Articles/ArticleSources.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/CardTypes.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/styles/card.less"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/ListTruncate.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/reducers/home/single-collection-reducer.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Card.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/feedServiceCall.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Funding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/redux/reducers/home/__tests__/single-collection-reducer.spec.js"
+          ],
+          "commitId": "4bf04910471e591ad29f42f3c76ae8b1a8f8274a",
+          "timestamp": 1494538429000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "updated proto and reducer\n",
+          "date": "2017-05-11 17:33:49 -0400",
+          "id": "4bf04910471e591ad29f42f3c76ae8b1a8f8274a",
+          "msg": "updated proto and reducer",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/reducers/home/__tests__/single-collection-reducer.spec.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Card.js",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/client/modules/collections/components/feedCard/CardTypes.js"
+          ],
+          "commitId": "e6f14a4eb2279049f78c7cb5d23ace7d483f16e6",
+          "timestamp": 1494538486000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1166] adding mock data to stub added company card\n",
+          "date": "2017-05-11 17:34:46 -0400",
+          "id": "e6f14a4eb2279049f78c7cb5d23ace7d483f16e6",
+          "msg": "[CNR-1166] adding mock data to stub added company card",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Card.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/CardTypes.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/AddedCompany.js",
+            "src/client/modules/collections/components/feedCard/styles/card.less",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/client/modules/collections/components/feedCard/Cards/Funding.js",
+            "src/client/modules/collections/components/feedCard/Card.js"
+          ],
+          "commitId": "8e6a1dd958ae2f7dfb9256f35f84ba95fb81b39f",
+          "timestamp": 1494538486000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1166] adding added company card initial stub\n",
+          "date": "2017-05-11 17:34:46 -0400",
+          "id": "8e6a1dd958ae2f7dfb9256f35f84ba95fb81b39f",
+          "msg": "[CNR-1166] adding added company card initial stub",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/styles/card.less"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Funding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Card.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/AddedCompany.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/AddedCompany.js",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/client/modules/collections/components/feedCard/styles/card.less",
+            "src/client/modules/collections/components/feedCard/Cards/Funding.js",
+            "src/client/modules/collections/components/feedCard/Cards/Modals/FundingsModal.js"
+          ],
+          "commitId": "d95b410cb1e587c81e83bee5892de1da54b1fa0e",
+          "timestamp": 1494538486000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1166] adding mosiac badge stubs\n",
+          "date": "2017-05-11 17:34:46 -0400",
+          "id": "d95b410cb1e587c81e83bee5892de1da54b1fa0e",
+          "msg": "[CNR-1166] adding mosiac badge stubs",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Modals/FundingsModal.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/AddedCompany.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Funding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/styles/card.less"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/AddedCompany.js",
+            "src/client/modules/collections/components/feedCard/styles/card.less",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+          ],
+          "commitId": "d6d87588bcde2950290a16921be9af4d2e6c8850",
+          "timestamp": 1494538486000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1166] getting intitial mosaic badge config in.\n",
+          "date": "2017-05-11 17:34:46 -0400",
+          "id": "d6d87588bcde2950290a16921be9af4d2e6c8850",
+          "msg": "[CNR-1166] getting intitial mosaic badge config in.",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/styles/card.less"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/AddedCompany.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/server/middleware/feedServiceCall.js"
+          ],
+          "commitId": "12b51eedb1c86d89defcd0be332dca9c5770a7af",
+          "timestamp": 1494538486000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "adding feed service using dotenv\n",
+          "date": "2017-05-11 17:34:46 -0400",
+          "id": "12b51eedb1c86d89defcd0be332dca9c5770a7af",
+          "msg": "adding feed service using dotenv",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/feedServiceCall.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/styles/card.less"
+          ],
+          "commitId": "2f25e9072859661e12f9d00ef6bbdf5b5f4d490c",
+          "timestamp": 1494538486000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1166] fixing odd double indented issue in Less file.\n",
+          "date": "2017-05-11 17:34:46 -0400",
+          "id": "2f25e9072859661e12f9d00ef6bbdf5b5f4d490c",
+          "msg": "[CNR-1166] fixing odd double indented issue in Less file.",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/styles/card.less"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/AddedCompany.js",
+            "src/client/modules/collections/components/feedCard/styles/card.less"
+          ],
+          "commitId": "5801466fcb04e6de9100fe81603357e12d54ede5",
+          "timestamp": 1494538486000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1166] adding addedCompany card and styles\n",
+          "date": "2017-05-11 17:34:46 -0400",
+          "id": "5801466fcb04e6de9100fe81603357e12d54ede5",
+          "msg": "[CNR-1166] adding addedCompany card and styles",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/AddedCompany.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/styles/card.less"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/client/modules/collections/components/feedCard/Cards/FinanceFunding.js",
+            "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitions.js",
+            "src/client/modules/collections/components/feedCard/Cards/Funding.js",
+            "src/client/modules/collections/components/feedCard/Card.js",
+            "src/client/modules/collections/components/feedCard/Cards/AddedCompany.js",
+            "src/client/modules/collections/components/feedCard/Cards/IPO.js",
+            "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitionsFunding.js",
+            "src/client/modules/collections/components/feedCard/Cards/IpoFunding.js",
+            "src/client/modules/collections/components/feedCard/Cards/Financing.js"
+          ],
+          "commitId": "13daf7db6397e6ba45968caad4f809e477a2bc40",
+          "timestamp": 1494538486000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1160] adding refactored cards to account for missing funding cards\n",
+          "date": "2017-05-11 17:34:46 -0400",
+          "id": "13daf7db6397e6ba45968caad4f809e477a2bc40",
+          "msg": "[CNR-1160] adding refactored cards to account for missing funding cards",
+          "paths": [
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/FinanceFunding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            },
+            {
+              "editType": "delete",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Funding.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitionsFunding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/AddedCompany.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/IpoFunding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Card.js"
+            },
+            {
+              "editType": "delete",
+              "file": "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitions.js"
+            },
+            {
+              "editType": "delete",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Financing.js"
+            },
+            {
+              "editType": "delete",
+              "file": "src/client/modules/collections/components/feedCard/Cards/IPO.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/AddedCompany.js",
+            "webpack/webpack.config.dev.js",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/client/modules/collections/components/feedCard/Cards/FinanceFunding.js",
+            "src/server/middleware/feed.proto",
+            "src/client/modules/collections/components/feedCard/Card.js"
+          ],
+          "commitId": "aac2a01929996650b594c5875c19458f24ee9587",
+          "timestamp": 1494538555000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1166] getting card data set to work with funding/addedCompany cards\n",
+          "date": "2017-05-11 17:35:55 -0400",
+          "id": "aac2a01929996650b594c5875c19458f24ee9587",
+          "msg": "[CNR-1166] getting card data set to work with funding/addedCompany cards",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Card.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/FinanceFunding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "webpack/webpack.config.dev.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            },
+            {
+              "editType": "delete",
+              "file": "src/server/middleware/feed.proto"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/AddedCompany.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Card.js",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+          ],
+          "commitId": "ad4854f5c3dcd79cec78d5c4a8446dab499c4a21",
+          "timestamp": 1494538555000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1166] getting card titles to be more inline with comp\n",
+          "date": "2017-05-11 17:35:55 -0400",
+          "id": "ad4854f5c3dcd79cec78d5c4a8446dab499c4a21",
+          "msg": "[CNR-1166] getting card titles to be more inline with comp",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Card.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/AddedCompany.js",
+            "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/ListTruncate.js",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/client/modules/collections/components/feedCard/Cards/FinanceFunding.js",
+            "src/client/modules/collections/components/feedCard/Card.js"
+          ],
+          "commitId": "c67a5989cba352c9e815453d2293fad00e4ab29f",
+          "timestamp": 1494538555000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "addressing linting errors\n",
+          "date": "2017-05-11 17:35:55 -0400",
+          "id": "c67a5989cba352c9e815453d2293fad00e4ab29f",
+          "msg": "addressing linting errors",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Card.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/AddedCompany.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/FinanceFunding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/ListTruncate.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/CTAs/RecomendationActions.js",
+            "webpack/webpack.config.dev.js",
+            "src/client/assets/fonts/cbinsights.woff",
+            "src/client/modules/collections/components/feedCard/styles/card.less",
+            "src/client/assets/fonts/cbinsights.svg",
+            "src/client/assets/styles/main.less",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/client/assets/fonts/cbinsights.ttf",
+            "src/client/modules/collections/components/feedCard/Cards/FinanceFunding.js",
+            "src/client/modules/collections/components/feedCard/CardSubTypes.js",
+            "src/client/assets/fonts/cbinsights.eot",
+            "src/client/modules/collections/components/feedCard/Card.js",
+            "src/client/assets/styles/cbi-icons/fontIcons.less"
+          ],
+          "commitId": "0e190691f3db76c2f7be576b6d43e8f0b7557956",
+          "timestamp": 1494538555000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "adding new funding feature and adding icon fonts.\n",
+          "date": "2017-05-11 17:35:55 -0400",
+          "id": "0e190691f3db76c2f7be576b6d43e8f0b7557956",
+          "msg": "adding new funding feature and adding icon fonts.",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/assets/styles/main.less"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/CTAs/RecomendationActions.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/FinanceFunding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/assets/fonts/cbinsights.ttf"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/assets/fonts/cbinsights.eot"
+            },
+            {
+              "editType": "edit",
+              "file": "webpack/webpack.config.dev.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Card.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/assets/styles/cbi-icons/fontIcons.less"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/CardSubTypes.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/assets/fonts/cbinsights.svg"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/assets/fonts/cbinsights.woff"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/styles/card.less"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/server/middleware/feedServiceCall.js",
+            "src/server/config/index.js",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/server/middleware/getUserIdFromSession.js",
+            "src/client/modules/collections/components/feedCard/CardSubTypes.js",
+            "src/client/modules/collections/components/feedCard/Card.js",
+            "src/server/index.js"
+          ],
+          "commitId": "cd00ba8baf78a4f27c9e036fe1b22f2c769d6b05",
+          "timestamp": 1494539814000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "adding feed items from feed service. stubbing financing card for dev\n",
+          "date": "2017-05-11 17:56:54 -0400",
+          "id": "cd00ba8baf78a4f27c9e036fe1b22f2c769d6b05",
+          "msg": "adding feed items from feed service. stubbing financing card for dev",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Card.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/server/config/index.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/feedServiceCall.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/getUserIdFromSession.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/server/index.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/CardSubTypes.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "package.json"
+          ],
+          "commitId": "12822622f8ff2e09dca60d1a30370be3831559da",
+          "timestamp": 1494600355000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "adding dotenv to this branch.\n",
+          "date": "2017-05-12 10:45:55 -0400",
+          "id": "12822622f8ff2e09dca60d1a30370be3831559da",
+          "msg": "adding dotenv to this branch.",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "package.json"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/client/modules/collections/components/feedCard/Cards/FinanceFunding.js",
+            "src/client/modules/collections/components/feedCard/CardSubTypes.js",
+            "src/client/modules/collections/components/feedCard/Card.js",
+            "src/client/modules/collections/components/feedCard/styles/card.less",
+            "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitionsFunding.js",
+            "src/client/modules/collections/components/feedCard/Cards/IpoFunding.js"
+          ],
+          "commitId": "dae5e05b8d381d9cb1d16039720c20f7e3de7716",
+          "timestamp": 1494947985000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "adding funding cards with hardcoded data\n",
+          "date": "2017-05-16 11:19:45 -0400",
+          "id": "dae5e05b8d381d9cb1d16039720c20f7e3de7716",
+          "msg": "adding funding cards with hardcoded data",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/styles/card.less"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Card.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/IpoFunding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/CardSubTypes.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitionsFunding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/FinanceFunding.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/ListTruncate.js",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitionsFunding.js",
+            "src/client/modules/collections/components/feedCard/Cards/FinanceFunding.js",
+            "src/client/modules/collections/components/feedCard/Cards/IpoFunding.js"
+          ],
+          "commitId": "ea3cf4ef5ece7099dff7229359baed955836a865",
+          "timestamp": 1494963948000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1140] adds funding cards and added company cards\n",
+          "date": "2017-05-16 15:45:48 -0400",
+          "id": "ea3cf4ef5ece7099dff7229359baed955836a865",
+          "msg": "[CNR-1140] adds funding cards and added company cards",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/ListTruncate.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/IpoFunding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitionsFunding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/FinanceFunding.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/CTAs/RecomendationActions.js",
+            "src/client/modules/collections/components/feedCard/__tests__/Card.spec.js",
+            "src/client/modules/collections/components/feedCard/__tests__/Funding.spec.js",
+            "src/client/modules/collections/components/feedCard/__tests__/DealModal.spec.js",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/client/modules/collections/components/feedCard/__tests__/ExpandCardCTA.spec.js",
+            "src/client/modules/collections/components/feedCard/__tests__/FundingsModal.spec.js",
+            "src/client/modules/collections/components/feedCard/__tests__/Comments.spec.js",
+            "src/client/modules/collections/components/feedCard/__tests__/GenericCTA.spec.js",
+            "src/client/modules/collections/components/feedCard/__tests__/ArticleSources.spec.js"
+          ],
+          "commitId": "a6da4509e1dde702423eaf8c0845e6a4b0952558",
+          "timestamp": 1494964669000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1140] adds funding cards reading from feed\nneed to make individual cards DRY\n",
+          "date": "2017-05-16 15:57:49 -0400",
+          "id": "a6da4509e1dde702423eaf8c0845e6a4b0952558",
+          "msg": "[CNR-1140] adds funding cards reading from feed",
+          "paths": [
+            {
+              "editType": "delete",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/DealModal.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/CTAs/RecomendationActions.js"
+            },
+            {
+              "editType": "delete",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/FundingsModal.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            },
+            {
+              "editType": "delete",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/Comments.spec.js"
+            },
+            {
+              "editType": "delete",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/ExpandCardCTA.spec.js"
+            },
+            {
+              "editType": "delete",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/ArticleSources.spec.js"
+            },
+            {
+              "editType": "delete",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/Card.spec.js"
+            },
+            {
+              "editType": "delete",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/Funding.spec.js"
+            },
+            {
+              "editType": "delete",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/GenericCTA.spec.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitionsFunding.js"
+          ],
+          "commitId": "b64b2bde36bbc0e76c001a0006e6baed95ce2845",
+          "timestamp": 1494964726000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1140] addressing linting issues\n",
+          "date": "2017-05-16 15:58:46 -0400",
+          "id": "b64b2bde36bbc0e76c001a0006e6baed95ce2845",
+          "msg": "[CNR-1140] addressing linting issues",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitionsFunding.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/__tests__/Card.spec.js",
+            "src/client/modules/collections/components/feedCard/__tests__/Funding.spec.js",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/client/modules/collections/components/feedCard/__tests__/DealModal.spec.js",
+            "npm-shrinkwrap.json",
+            "src/client/modules/collections/components/feedCard/__tests__/ExpandCardCTA.spec.js",
+            "src/client/modules/collections/components/feedCard/__tests__/FundingsModal.spec.js",
+            "src/client/modules/collections/components/feedCard/__tests__/Comments.spec.js",
+            "src/client/modules/collections/components/feedCard/Card.js",
+            "src/client/modules/collections/components/feedCard/__tests__/GenericCTA.spec.js",
+            "src/client/modules/collections/components/feedCard/__tests__/ArticleSources.spec.js"
+          ],
+          "commitId": "11c0d9ffd08013530ca5fb49226598974d123244",
+          "timestamp": 1494972250000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "getting testing stubs in place\n",
+          "date": "2017-05-16 18:04:10 -0400",
+          "id": "11c0d9ffd08013530ca5fb49226598974d123244",
+          "msg": "getting testing stubs in place",
+          "paths": [
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/ArticleSources.spec.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/Funding.spec.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/FundingsModal.spec.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/Comments.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/Card.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "npm-shrinkwrap.json"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Card.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/GenericCTA.spec.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/DealModal.spec.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/ExpandCardCTA.spec.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/containers/home/SingleCollection.js"
+          ],
+          "commitId": "282c76c6d78357e448e0d592defa4a844010c406",
+          "timestamp": 1495038538000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "addressing linting errors and removing forced error\n",
+          "date": "2017-05-17 12:28:58 -0400",
+          "id": "282c76c6d78357e448e0d592defa4a844010c406",
+          "msg": "addressing linting errors and removing forced error",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/SingleCollection.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/server/middleware/feedServiceCall.js",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/client/modules/collections/redux/reducers/home/feed-reducer.js",
+            "src/client/modules/collections/redux/actions/home/feed-actions.js",
+            "src/client/modules/collections/containers/home/SingleCollection.js",
+            "src/client/modules/collections/redux/reducers/home/single-collection-reducer.js"
+          ],
+          "commitId": "cdfee15fec1ab0eaba600d4a2b62575c627db80e",
+          "timestamp": 1495038943000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "adding checks in redux to show error on feed tab if service throws 500s\n",
+          "date": "2017-05-17 12:35:43 -0400",
+          "id": "cdfee15fec1ab0eaba600d4a2b62575c627db80e",
+          "msg": "adding checks in redux to show error on feed tab if service throws 500s",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/actions/home/feed-actions.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/reducers/home/feed-reducer.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/reducers/home/single-collection-reducer.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/feedServiceCall.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/SingleCollection.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/containers/home/SingleCollection.js"
+          ],
+          "commitId": "23c42c91ad3e03b1763e6d3ac3b98eb4561635d6",
+          "timestamp": 1495044894000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "applying changes to last cherry-pick\n",
+          "date": "2017-05-17 14:14:54 -0400",
+          "id": "23c42c91ad3e03b1763e6d3ac3b98eb4561635d6",
+          "msg": "applying changes to last cherry-pick",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/SingleCollection.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/FinanceFunding.js",
+            "src/client/modules/collections/components/feedCard/Cards/IpoFunding.js",
+            "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitionsFunding.js"
+          ],
+          "commitId": "fdd0e88a566a438395bf423ee57dcb3cd24699f2",
+          "timestamp": 1495048474000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "fixing images in cards\n",
+          "date": "2017-05-17 15:14:34 -0400",
+          "id": "fdd0e88a566a438395bf423ee57dcb3cd24699f2",
+          "msg": "fixing images in cards",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/IpoFunding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/FinanceFunding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitionsFunding.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/AddedCompany.js"
+          ],
+          "commitId": "bff8f2835e743d24a06332e1048b0fb49f65fbd8",
+          "timestamp": 1495048541000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "added company image update as well\n",
+          "date": "2017-05-17 15:15:41 -0400",
+          "id": "bff8f2835e743d24a06332e1048b0fb49f65fbd8",
+          "msg": "added company image update as well",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/AddedCompany.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/containers/home/SingleCollection.js",
+            "src/server/middleware/feedServiceCall.js",
+            "src/client/modules/collections/components/feedCard/__tests__/Card.spec.js"
+          ],
+          "commitId": "69427ec0e0c244a3cc4a85e59e8e54ac54b262e7",
+          "timestamp": 1495051468000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "committing to switch to dev\n",
+          "date": "2017-05-17 16:04:28 -0400",
+          "id": "69427ec0e0c244a3cc4a85e59e8e54ac54b262e7",
+          "msg": "committing to switch to dev",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/SingleCollection.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/feedServiceCall.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/Card.spec.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/__tests__/Card.spec.js",
+            "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitionsFunding.js",
+            "src/client/modules/collections/components/feedCard/Cards/FinanceFunding.js",
+            "src/client/modules/collections/components/feedCard/Cards/IpoFunding.js"
+          ],
+          "commitId": "157419c8d35d7f75b96cdde457b4b2cd1f1c25d6",
+          "timestamp": 1495057017000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "adding logo component.\ngetting more test stubs\n",
+          "date": "2017-05-17 17:36:57 -0400",
+          "id": "157419c8d35d7f75b96cdde457b4b2cd1f1c25d6",
+          "msg": "adding logo component.",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/FinanceFunding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/Card.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitionsFunding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/IpoFunding.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/__tests__/Card.spec.js"
+          ],
+          "commitId": "512335c62435b81b3b4cf690f33124466d1fac6a",
+          "timestamp": 1495118915000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "adding more testing stubs\n",
+          "date": "2017-05-18 10:48:35 -0400",
+          "id": "512335c62435b81b3b4cf690f33124466d1fac6a",
+          "msg": "adding more testing stubs",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/Card.spec.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/__tests__/Card.spec.js",
+            "src/client/modules/collections/components/feedCard/__tests__/Funding.spec.js",
+            "src/client/modules/collections/components/feedCard/__tests__/DealModal.spec.js",
+            "src/client/modules/collections/components/feedCard/__tests__/ExpandCardCTA.spec.js",
+            "src/client/modules/collections/components/feedCard/__tests__/FundingsModal.spec.js",
+            "src/client/modules/collections/components/feedCard/__tests__/Comments.spec.js",
+            "src/client/modules/collections/components/feedCard/__tests__/GenericCTA.spec.js",
+            "src/client/modules/collections/components/feedCard/__tests__/ArticleSources.spec.js"
+          ],
+          "commitId": "5ba1aa68807d87044ad7309b47091bb3167d7478",
+          "timestamp": 1495124423000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "removing tests and stubs currently WIP\n",
+          "date": "2017-05-18 12:20:23 -0400",
+          "id": "5ba1aa68807d87044ad7309b47091bb3167d7478",
+          "msg": "removing tests and stubs currently WIP",
+          "paths": [
+            {
+              "editType": "delete",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/DealModal.spec.js"
+            },
+            {
+              "editType": "delete",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/ExpandCardCTA.spec.js"
+            },
+            {
+              "editType": "delete",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/GenericCTA.spec.js"
+            },
+            {
+              "editType": "delete",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/ArticleSources.spec.js"
+            },
+            {
+              "editType": "delete",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/Funding.spec.js"
+            },
+            {
+              "editType": "delete",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/Comments.spec.js"
+            },
+            {
+              "editType": "delete",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/FundingsModal.spec.js"
+            },
+            {
+              "editType": "delete",
+              "file": "src/client/modules/collections/components/feedCard/__tests__/Card.spec.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/ListTruncate.js",
+            "src/client/modules/collections/components/feedCard/styles/card.less",
+            "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitionsFunding.js",
+            "src/client/modules/collections/components/feedCard/Cards/FinanceFunding.js",
+            "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/ExpandedList.js",
+            "src/client/modules/collections/components/feedCard/Cards/IpoFunding.js"
+          ],
+          "commitId": "d9f38367803e0c9485333dac54fb313871e8137b",
+          "timestamp": 1495136257000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "adding funding round mapping to correct member and other UI tweaks.\n",
+          "date": "2017-05-18 15:37:37 -0400",
+          "id": "d9f38367803e0c9485333dac54fb313871e8137b",
+          "msg": "adding funding round mapping to correct member and other UI tweaks.",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitionsFunding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/ListTruncate.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/FinanceFunding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/ExpandedList.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/IpoFunding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/styles/card.less"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/AddedCompany.js",
+            "src/client/modules/collections/components/feedCard/Cards/Articles/ArticleSources.js",
+            "src/client/modules/collections/components/feedCard/styles/card.less",
+            "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitionsFunding.js",
+            "src/client/modules/collections/components/feedCard/Cards/FinanceFunding.js",
+            "src/client/modules/collections/components/feedCard/Cards/IpoFunding.js"
+          ],
+          "commitId": "f81979af794c4653cdd43107cd042b6ef61d83e8",
+          "timestamp": 1495143297000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1140] adding JIRA tweaks\n",
+          "date": "2017-05-18 17:34:57 -0400",
+          "id": "f81979af794c4653cdd43107cd042b6ef61d83e8",
+          "msg": "[CNR-1140] adding JIRA tweaks",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/AddedCompany.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/IpoFunding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/FinanceFunding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Articles/ArticleSources.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitionsFunding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/styles/card.less"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/redux/actions/home/feed-actions.js",
+            "src/server/middleware/protos/feed.proto"
+          ],
+          "commitId": "6a34f5078320457f455992b648815160d405fbcb",
+          "timestamp": 1495144182000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "updates to feed Proto and middleware\n",
+          "date": "2017-05-18 17:49:42 -0400",
+          "id": "6a34f5078320457f455992b648815160d405fbcb",
+          "msg": "updates to feed Proto and middleware",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/protos/feed.proto"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/actions/home/feed-actions.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/ListTruncate.js",
+            "src/client/modules/collections/components/feedCard/Cards/Articles/ArticleSources.js",
+            "src/client/modules/common/utils/string.js"
+          ],
+          "commitId": "77088b4510f0c738e29ef54e3931cd06e68dc049",
+          "timestamp": 1495145315000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1140] adding better handling of strings in helpers\n",
+          "date": "2017-05-18 18:08:35 -0400",
+          "id": "77088b4510f0c738e29ef54e3931cd06e68dc049",
+          "msg": "[CNR-1140] adding better handling of strings in helpers",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/ListTruncate.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/common/utils/string.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Articles/ArticleSources.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/client/modules/collections/components/feedCard/styles/card.less",
+            "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/ExpandedList.js",
+            "src/client/modules/collections/components/feedCard/Card.js"
+          ],
+          "commitId": "af5169b509c8fd114d0fefa20efac37dcb1e040f",
+          "timestamp": 1495216628000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "addressing JIRA issues/comments\n",
+          "date": "2017-05-19 13:57:08 -0400",
+          "id": "af5169b509c8fd114d0fefa20efac37dcb1e040f",
+          "msg": "addressing JIRA issues/comments",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Card.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/ExpandedList.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/styles/card.less"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/containers/home/SingleCollection.js",
+            "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/ExpandedList.js",
+            "src/client/modules/collections/components/feedCard/Card.js"
+          ],
+          "commitId": "9c09a79992105dec3a91c20ae6a896c39c402a6b",
+          "timestamp": 1495217452000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "addressing linting issues.\n",
+          "date": "2017-05-19 14:10:52 -0400",
+          "id": "9c09a79992105dec3a91c20ae6a896c39c402a6b",
+          "msg": "addressing linting issues.",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/SingleCollection.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Card.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/ExpandedList.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/client/modules/collections/components/feedCard/Cards/FinanceFunding.js",
+            "src/client/modules/collections/components/feedCard/Card.js",
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/Card.spec.js",
+            "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitionsFunding.js",
+            "src/client/modules/collections/components/feedCard/Cards/FundingCard.js",
+            "src/client/modules/collections/components/feedCard/Cards/IpoFunding.js"
+          ],
+          "commitId": "2e75de9be73d6a31a4c95c1af184af0d0f6866b5",
+          "timestamp": 1495476082000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1140] adding unit tests for outer Card component\n",
+          "date": "2017-05-22 14:01:22 -0400",
+          "id": "2e75de9be73d6a31a4c95c1af184af0d0f6866b5",
+          "msg": "[CNR-1140] adding unit tests for outer Card component",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitionsFunding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/IpoFunding.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/Card.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/FinanceFunding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Card.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/FundingCard.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/ExpandCardCTA.spec.js",
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/Card.spec.js"
+          ],
+          "commitId": "06c2fad4d92dc4252e3028db35b5a395a68436d7",
+          "timestamp": 1495484141000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1140] getting tests inplace for Card child component ExpandCardCTA\n- expand card call to action tests complete\n",
+          "date": "2017-05-22 16:15:41 -0400",
+          "id": "06c2fad4d92dc4252e3028db35b5a395a68436d7",
+          "msg": "[CNR-1140] getting tests inplace for Card child component ExpandCardCTA",
+          "paths": [
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/ExpandCardCTA.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/Card.spec.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/ExpandCardCTA.spec.js"
+          ],
+          "commitId": "97e55e90d38afd911d054e95b31e662010420217",
+          "timestamp": 1495484305000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1140] updated expand card Cta tests\n",
+          "date": "2017-05-22 16:18:25 -0400",
+          "id": "97e55e90d38afd911d054e95b31e662010420217",
+          "msg": "[CNR-1140] updated expand card Cta tests",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/ExpandCardCTA.spec.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/ExpandCardCTA.spec.js",
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/GenericCTA.spec.js"
+          ],
+          "commitId": "0e7a83b1b89e4b4123223f0605ef21b58aca68d1",
+          "timestamp": 1495486176000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1140] adding generic call to action tests\n",
+          "date": "2017-05-22 16:49:36 -0400",
+          "id": "0e7a83b1b89e4b4123223f0605ef21b58aca68d1",
+          "msg": "[CNR-1140] adding generic call to action tests",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/ExpandCardCTA.spec.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/GenericCTA.spec.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/FundingCard.js",
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/GenericCTA.spec.js"
+          ],
+          "commitId": "cc14eb8749c02ad59615a6cd743160d37ee76592",
+          "timestamp": 1495491165000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "adding more testing stubs\n",
+          "date": "2017-05-22 18:12:45 -0400",
+          "id": "cc14eb8749c02ad59615a6cd743160d37ee76592",
+          "msg": "adding more testing stubs",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/FundingCard.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/GenericCTA.spec.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/Funding.spec.js"
+          ],
+          "commitId": "67c781d1876da368c3c86f4136cfd22997cc893d",
+          "timestamp": 1495545425000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1140] adding more tests for financing cards\n",
+          "date": "2017-05-23 09:17:05 -0400",
+          "id": "67c781d1876da368c3c86f4136cfd22997cc893d",
+          "msg": "[CNR-1140] adding more tests for financing cards",
+          "paths": [
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/Funding.spec.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/ExpandCardCTA.spec.js",
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/GenericCTA.spec.js",
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/Funding.spec.js",
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/Card.spec.js"
+          ],
+          "commitId": "6016e7cc124decbb583f1ac3ab5dde0a45f2f4db",
+          "timestamp": 1495549963000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1140] flushing out more tests for code review. removed .only tests.\n",
+          "date": "2017-05-23 10:32:43 -0400",
+          "id": "6016e7cc124decbb583f1ac3ab5dde0a45f2f4db",
+          "msg": "[CNR-1140] flushing out more tests for code review. removed .only tests.",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/ExpandCardCTA.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/Funding.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/Card.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/GenericCTA.spec.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/CTAs/RecomendationActions.js",
+            "src/client/modules/collections/components/customize-rec/CustomizeRec.js",
+            "src/client/modules/collections/components/feedCard/Cards/FinanceFunding.js",
+            "src/client/modules/collections/components/feedCard/Cards/CTAs/RecommendationActions.js",
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/Card.spec.js",
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/GenericCTA.spec.js",
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/ExpandCardCTA.spec.js",
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/Funding.spec.js",
+            "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitionsFunding.js",
+            "src/client/modules/collections/components/feedCard/Cards/IpoFunding.js",
+            "src/server/middleware/protos/feed.proto"
+          ],
+          "commitId": "a16610d51c663d1bbb083f9dcbd90eedc01eb236",
+          "timestamp": 1495565962000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "adding more testing stubs splitting out funding card tests\n",
+          "date": "2017-05-23 14:59:22 -0400",
+          "id": "a16610d51c663d1bbb083f9dcbd90eedc01eb236",
+          "msg": "adding more testing stubs splitting out funding card tests",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/Funding.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/protos/feed.proto"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/GenericCTA.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/IpoFunding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/FinanceFunding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/customize-rec/CustomizeRec.js"
+            },
+            {
+              "editType": "delete",
+              "file": "src/client/modules/collections/components/feedCard/Cards/CTAs/RecomendationActions.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/ExpandCardCTA.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/Card.spec.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/CTAs/RecommendationActions.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitionsFunding.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/redux/reducers/home/single-collection-reducer.js",
+            "src/client/modules/collections/redux/reducers/home/__tests__/single-collection-reducer.spec.js"
+          ],
+          "commitId": "689dcfdde00726cbeafe75d34e1a9644e64b8252",
+          "timestamp": 1495653041000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "remove extra feed in state not used\n",
+          "date": "2017-05-24 15:10:41 -0400",
+          "id": "689dcfdde00726cbeafe75d34e1a9644e64b8252",
+          "msg": "remove extra feed in state not used",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/reducers/home/single-collection-reducer.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/reducers/home/__tests__/single-collection-reducer.spec.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitionsFunding.js",
+            "src/client/modules/collections/components/feedCard/Cards/FinanceFunding.js",
+            "src/client/modules/collections/redux/actions/home/feed-actions.js",
+            "src/client/modules/collections/components/feedCard/Cards/IpoFunding.js",
+            "src/client/modules/collections/components/feedCard/Card.js",
+            "src/client/modules/collections/components/feedCard/Cards/CTAs/RecommendationActions.js"
+          ],
+          "commitId": "d77c9b7a90743972c7516066ae875c2700b7d751",
+          "timestamp": 1495665834000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "added suggestions event logging for feed items\n",
+          "date": "2017-05-24 18:43:54 -0400",
+          "id": "d77c9b7a90743972c7516066ae875c2700b7d751",
+          "msg": "added suggestions event logging for feed items",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/FinanceFunding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Card.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/actions/home/feed-actions.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/CTAs/RecommendationActions.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/IpoFunding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitionsFunding.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/CTAs/RecommendationActions.js"
+          ],
+          "commitId": "5a3ffce0936553ee481a42fe0bd2f9a1c403a045",
+          "timestamp": 1495665924000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "remove console log\n",
+          "date": "2017-05-24 18:45:24 -0400",
+          "id": "5a3ffce0936553ee481a42fe0bd2f9a1c403a045",
+          "msg": "remove console log",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/CTAs/RecommendationActions.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/IpoFunding.spec.js"
+          ],
+          "commitId": "dfdbadd5a0c2f1fe55e0eb5e87c6efce983f2d0f",
+          "timestamp": 1495721475000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "adding IPO funding card tests\n",
+          "date": "2017-05-25 10:11:15 -0400",
+          "id": "dfdbadd5a0c2f1fe55e0eb5e87c6efce983f2d0f",
+          "msg": "adding IPO funding card tests",
+          "paths": [
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/IpoFunding.spec.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/IpoFunding.spec.js"
+          ],
+          "commitId": "d64daea98377a22e8067ec9527cb391c861276da",
+          "timestamp": 1495721475000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "adding M&A funding spec\n",
+          "date": "2017-05-25 10:11:15 -0400",
+          "id": "d64daea98377a22e8067ec9527cb391c861276da",
+          "msg": "adding M&A funding spec",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/IpoFunding.spec.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/DealModal.spec.js"
+          ],
+          "commitId": "7465cdcc5695f154b2d18f148762badc0cb5258f",
+          "timestamp": 1495721475000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "getting DealModal tests flushed out\n",
+          "date": "2017-05-25 10:11:15 -0400",
+          "id": "7465cdcc5695f154b2d18f148762badc0cb5258f",
+          "msg": "getting DealModal tests flushed out",
+          "paths": [
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/DealModal.spec.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/MergersAcquisitionsFunding.spec.js",
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/FundingsModal.spec.js",
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/FinanceFunding.spec.js"
+          ],
+          "commitId": "5a6c343d807f9f893514c06b867f9e7ab2bc86e9",
+          "timestamp": 1495721475000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "flushing out more tests\nDealModal tests FundingsModal tests M & A Funding Card tests Finance\nFunding Card tests\n",
+          "date": "2017-05-25 10:11:15 -0400",
+          "id": "5a6c343d807f9f893514c06b867f9e7ab2bc86e9",
+          "msg": "flushing out more tests",
+          "paths": [
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/MergersAcquisitionsFunding.spec.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/FundingsModal.spec.js"
+            },
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/FinanceFunding.spec.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/ArticleSources.spec.js"
+          ],
+          "commitId": "39744f6c8e86be43dbd30e68c076a63ed1d8e951",
+          "timestamp": 1495721475000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "adding artice sources specs\n",
+          "date": "2017-05-25 10:11:15 -0400",
+          "id": "39744f6c8e86be43dbd30e68c076a63ed1d8e951",
+          "msg": "adding artice sources specs",
+          "paths": [
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/ArticleSources.spec.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/MergersAcquisitionsFunding.spec.js",
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/DealModal.spec.js",
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/FinanceFunding.spec.js",
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/FundingsModal.spec.js",
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/Card.spec.js",
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/IpoFunding.spec.js",
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/ExpandCardCTA.spec.js",
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/GenericCTA.spec.js",
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/ArticleSources.spec.js",
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/Funding.spec.js"
+          ],
+          "commitId": "d169787c6e68dc416dfcca484c3c7cd1eb7111b7",
+          "timestamp": 1495721475000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "remove .only from tests - switching to code - review commentary\n",
+          "date": "2017-05-25 10:11:15 -0400",
+          "id": "d169787c6e68dc416dfcca484c3c7cd1eb7111b7",
+          "msg": "remove .only from tests - switching to code - review commentary",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/FundingsModal.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/ExpandCardCTA.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/FinanceFunding.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/Card.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/GenericCTA.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/IpoFunding.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/MergersAcquisitionsFunding.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/ArticleSources.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/DealModal.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/Funding.spec.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/Articles/ArticleSources.js",
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/ArticleSources.spec.js",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+          ],
+          "commitId": "e1f25570accc6279b9d99cfdf8efec51763f7614",
+          "timestamp": 1495721475000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "removing Feed Tab h5, addressing ArticleSources code review comments\n",
+          "date": "2017-05-25 10:11:15 -0400",
+          "id": "e1f25570accc6279b9d99cfdf8efec51763f7614",
+          "msg": "removing Feed Tab h5, addressing ArticleSources code review comments",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/ArticleSources.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Articles/ArticleSources.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/ArticleSources.spec.js",
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/GenericCTA.spec.js",
+            "src/client/modules/collections/components/feedCard/Cards/CTAs/GenericCTA.js",
+            "src/client/modules/collections/components/feedCard/Card.js"
+          ],
+          "commitId": "8d57fe88b89df67754ff1321cc0c5e00fbbe887d",
+          "timestamp": 1495721475000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "Addressing Comments of Code Review for GenericCTA\nmaking cta use icon fonts and updated tests for refactored modules\n",
+          "date": "2017-05-25 10:11:15 -0400",
+          "id": "8d57fe88b89df67754ff1321cc0c5e00fbbe887d",
+          "msg": "Addressing Comments of Code Review for GenericCTA",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Card.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/CTAs/GenericCTA.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/ArticleSources.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/GenericCTA.spec.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/CTAs/RecommendationActions.js"
+          ],
+          "commitId": "63a2329394dddcb3e849726dd83ec6c1e43bbeca",
+          "timestamp": 1495721530000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "adding RecommendationActions code review updates\n",
+          "date": "2017-05-25 10:12:10 -0400",
+          "id": "63a2329394dddcb3e849726dd83ec6c1e43bbeca",
+          "msg": "adding RecommendationActions code review updates",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/CTAs/RecommendationActions.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/ExpandedList.js",
+            "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/DescriptionTruncate.js"
+          ],
+          "commitId": "2fe1f913bd2712303cd5c68cbc0c77abbda5bedd",
+          "timestamp": 1495721530000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "addressing code review comments for Truncation Helpers\n",
+          "date": "2017-05-25 10:12:10 -0400",
+          "id": "2fe1f913bd2712303cd5c68cbc0c77abbda5bedd",
+          "msg": "addressing code review comments for Truncation Helpers",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/DescriptionTruncate.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/ExpandedList.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/common/utils/__tests__/string.spec.js",
+            "src/client/modules/collections/components/feedCard/Cards/Articles/ArticleSources.js",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/client/modules/collections/components/feedCard/Cards/FinanceFunding.js",
+            "src/client/modules/collections/components/feedCard/Card.js",
+            "src/client/modules/common/utils/string.js",
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/GenericCTA.spec.js",
+            "src/client/modules/collections/components/feedCard/IconTypes.js"
+          ],
+          "commitId": "a9395b1b6d447018dd01b1db8b0e466f232616a0",
+          "timestamp": 1495721530000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "addressing coede review comments\n",
+          "date": "2017-05-25 10:12:10 -0400",
+          "id": "a9395b1b6d447018dd01b1db8b0e466f232616a0",
+          "msg": "addressing coede review comments",
+          "paths": [
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/IconTypes.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/FinanceFunding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/common/utils/__tests__/string.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Articles/ArticleSources.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/common/utils/string.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Card.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/GenericCTA.spec.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/common/utils/string.js"
+          ],
+          "commitId": "b29c9bca54b916e639732ca6b130b4b46389b47f",
+          "timestamp": 1495721530000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "removing string util in favor of one currently inplace.\n",
+          "date": "2017-05-25 10:12:10 -0400",
+          "id": "b29c9bca54b916e639732ca6b130b4b46389b47f",
+          "msg": "removing string util in favor of one currently inplace.",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/common/utils/string.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/redux/actions/home/feed-actions.js",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/Card.spec.js"
+          ],
+          "commitId": "98fa59300a2bcb964dd32fd80b09bdc3a0916db8",
+          "timestamp": 1495726815000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "addressing linting issues from merge of connie's branch\n",
+          "date": "2017-05-25 11:40:15 -0400",
+          "id": "98fa59300a2bcb964dd32fd80b09bdc3a0916db8",
+          "msg": "addressing linting issues from merge of connie's branch",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/actions/home/feed-actions.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/Card.spec.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/AddedItemCard.js"
+          ],
+          "commitId": "12a3b50008fd2c4711fe12ded9ad49fc56a117af",
+          "timestamp": 1495733251000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1178] getting stub of added items parent class in place.\ngetting new branch ready for work\n",
+          "date": "2017-05-25 13:27:31 -0400",
+          "id": "12a3b50008fd2c4711fe12ded9ad49fc56a117af",
+          "msg": "[CNR-1178] getting stub of added items parent class in place.",
+          "paths": [
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/AddedItemCard.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/styles/card.less",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/client/modules/collections/components/feedCard/Cards/AddedInvestor.js"
+          ],
+          "commitId": "44270ce691a098b47bc66575591ca77bb7a68212",
+          "timestamp": 1496155723000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "pushing to address wonk\n",
+          "date": "2017-05-30 10:48:43 -0400",
+          "id": "44270ce691a098b47bc66575591ca77bb7a68212",
+          "msg": "pushing to address wonk",
+          "paths": [
+            {
+              "editType": "add",
+              "file": "src/client/modules/collections/components/feedCard/Cards/AddedInvestor.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/styles/card.less"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/redux/actions/home/feed-actions.js",
+            "src/server/middleware/protos/feed.proto"
+          ],
+          "commitId": "f7d95cc092a10492cb4739e3555aecc28dda8f4b",
+          "timestamp": 1496174340000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "update proto and offset\n",
+          "date": "2017-05-30 15:59:00 -0400",
+          "id": "f7d95cc092a10492cb4739e3555aecc28dda8f4b",
+          "msg": "update proto and offset",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/protos/feed.proto"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/actions/home/feed-actions.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/ListTruncate.js",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/client/modules/collections/components/feedCard/CardTypes.js",
+            "src/client/modules/collections/components/feedCard/Card.js",
+            "src/client/modules/collections/components/feedCard/Cards/AddedCompany.js",
+            "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitionsFunding.js",
+            "src/client/modules/collections/components/feedCard/Cards/AddedInvestor.js",
+            "src/client/modules/collections/components/feedCard/Cards/FundingCard.js",
+            "src/client/modules/collections/components/feedCard/Cards/Modals/FundingsModal.js"
+          ],
+          "commitId": "4b9657f96286b409433c437f1d54419c9e17e349",
+          "timestamp": 1496180361000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "fix components with updates from proto\n",
+          "date": "2017-05-30 17:39:21 -0400",
+          "id": "4b9657f96286b409433c437f1d54419c9e17e349",
+          "msg": "fix components with updates from proto",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/MergersAcquisitionsFunding.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/Modals/FundingsModal.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/FundingCard.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/AddedCompany.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/TruncationHelpers/ListTruncate.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/CardTypes.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Card.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/AddedInvestor.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/IpoFunding.spec.js",
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/MergersAcquisitionsFunding.spec.js",
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/Funding.spec.js",
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/FinanceFunding.spec.js"
+          ],
+          "commitId": "810c713756949011895a5d5d3706d480f69144fb",
+          "timestamp": 1496182457000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "fixing tests\n",
+          "date": "2017-05-30 18:14:17 -0400",
+          "id": "810c713756949011895a5d5d3706d480f69144fb",
+          "msg": "fixing tests",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/Funding.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/IpoFunding.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/MergersAcquisitionsFunding.spec.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/FinanceFunding.spec.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/__tests__/MergersAcquisitionsFunding.spec.js"
+          ],
+          "commitId": "f368c65f22dfc74958e00666faac5a9c9a81cb2e",
+          "timestamp": 1496182906000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "lint fix\n",
+          "date": "2017-05-30 18:21:46 -0400",
+          "id": "f368c65f22dfc74958e00666faac5a9c9a81cb2e",
+          "msg": "lint fix",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/__tests__/MergersAcquisitionsFunding.spec.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/AddedCompany.js",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js",
+            "src/server/middleware/protos/feed.proto",
+            "src/client/modules/collections/components/feedCard/Card.js"
+          ],
+          "commitId": "e8a0fc58f6373f5a59472785f424ae6a8fb15c52",
+          "timestamp": 1496246004000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "adding fixes to cards from JIRA\n",
+          "date": "2017-05-31 11:53:24 -0400",
+          "id": "e8a0fc58f6373f5a59472785f424ae6a8fb15c52",
+          "msg": "adding fixes to cards from JIRA",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/AddedCompany.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/server/middleware/protos/feed.proto"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Card.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/AddedCompany.js",
+            "src/client/modules/collections/redux/actions/home/feed-actions.js",
+            "src/client/modules/collections/components/feedCard/styles/card.less"
+          ],
+          "commitId": "40f7de4fbdc13f3c9283410895521ec1ef753d6b",
+          "timestamp": 1496255943000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1166] addressing JIRA comments\n",
+          "date": "2017-05-31 14:39:03 -0400",
+          "id": "40f7de4fbdc13f3c9283410895521ec1ef753d6b",
+          "msg": "[CNR-1166] addressing JIRA comments",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/styles/card.less"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/AddedCompany.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/actions/home/feed-actions.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/redux/actions/home/feed-actions.js",
+            "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+          ],
+          "commitId": "83b762bffb068f0378db32c55745621fcf403c5f",
+          "timestamp": 1496256266000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1166] addressing linting issues and removing mock data from feed\n",
+          "date": "2017-05-31 14:44:26 -0400",
+          "id": "83b762bffb068f0378db32c55745621fcf403c5f",
+          "msg": "[CNR-1166] addressing linting issues and removing mock data from feed",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/actions/home/feed-actions.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-tabs/FeedTab.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/components/feedCard/Cards/AddedCompany.js",
+            "src/client/modules/collections/redux/actions/home/feed-actions.js",
+            "src/client/modules/collections/components/feedCard/styles/card.less"
+          ],
+          "commitId": "48b3801905f5f3d9f214ea078ea30d9e7a2f623f",
+          "timestamp": 1496260539000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[CNR-1166] removing callout container if no mosaic or funding data\n",
+          "date": "2017-05-31 15:55:39 -0400",
+          "id": "48b3801905f5f3d9f214ea078ea30d9e7a2f623f",
+          "msg": "[CNR-1166] removing callout container if no mosaic or funding data",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/styles/card.less"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Cards/AddedCompany.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/actions/home/feed-actions.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/redux/actions/home/feed-actions.js",
+            "src/client/modules/collections/components/feedCard/Card.js"
+          ],
+          "commitId": "ce888149484cdf8f1bbd10e5a87ebbb50d345c39",
+          "timestamp": 1496261368000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdean",
+            "fullName": "James Dean"
+          },
+          "authorEmail": "jdean@cbinsights.com",
+          "comment": "[cnr-1166] fixing timestamp on card header to use funding date.\n",
+          "date": "2017-05-31 16:09:28 -0400",
+          "id": "ce888149484cdf8f1bbd10e5a87ebbb50d345c39",
+          "msg": "[cnr-1166] fixing timestamp on card header to use funding date.",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/redux/actions/home/feed-actions.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Card.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/containers/home/SingleCollection.js",
+            "src/client/modules/collections/components/feedCard/Card.js"
+          ],
+          "commitId": "c3fccc7525d5875292290c1c8a1f914653e15e0a",
+          "timestamp": 1496267733000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "fix feed tab link\n",
+          "date": "2017-05-31 17:55:33 -0400",
+          "id": "c3fccc7525d5875292290c1c8a1f914653e15e0a",
+          "msg": "fix feed tab link",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/components/feedCard/Card.js"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/SingleCollection.js"
+            }
+          ]
+        },
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/navigation/containers/Navigation.js"
+          ],
+          "commitId": "5e9b502a617c61ce485af9e26ab51c4081b04ef6",
+          "timestamp": 1496337539000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/mtauseef",
+            "fullName": "Mahd Tauseef"
+          },
+          "authorEmail": "mtauseef@cbinsights.com",
+          "comment": "fixed add a collection undefined name error\n",
+          "date": "2017-06-01 13:18:59 -0400",
+          "id": "5e9b502a617c61ce485af9e26ab51c4081b04ef6",
+          "msg": "fixed add a collection undefined name error",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/navigation/containers/Navigation.js"
+            }
+          ]
+        }
+      ],
+      "kind": "git"
+    }
+  ],
+  "nextBuild": {
+    "number": 49,
+    "url": "https://jenkins.cbinsights.com/job/cbi-site/job/master/49/"
+  },
+  "previousBuild": {
+    "number": 47,
+    "url": "https://jenkins.cbinsights.com/job/cbi-site/job/master/47/"
+  }
+}

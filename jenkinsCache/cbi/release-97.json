@@ -1,0 +1,53 @@
+{
+  "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+  "actions": [
+    {
+      "_class": "hudson.model.CauseAction",
+      "causes": [
+        {
+          "_class": "hudson.model.Cause$UserIdCause",
+          "shortDescription": "Started by user Alex Parayannilam",
+          "userId": "aparayannilam",
+          "userName": "Alex Parayannilam"
+        }
+      ]
+    },
+    {
+      "_class": "jenkins.metrics.impl.TimeInQueueAction"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.views.FlowGraphAction"
+    },
+    {},
+    {}
+  ],
+  "artifacts": [],
+  "building": false,
+  "description": null,
+  "displayName": "#97",
+  "duration": 698199,
+  "estimatedDuration": 776334,
+  "executor": null,
+  "fullDisplayName": "Repo: CBI » release #97",
+  "id": "97",
+  "keepLog": false,
+  "number": 97,
+  "queueId": 1299,
+  "result": "FAILURE",
+  "timestamp": 1496955376102,
+  "url": "https://jenkins.cbinsights.com/job/cbi/job/release/97/",
+  "changeSets": [],
+  "nextBuild": {
+    "number": 98,
+    "url": "https://jenkins.cbinsights.com/job/cbi/job/release/98/"
+  },
+  "previousBuild": {
+    "number": 96,
+    "url": "https://jenkins.cbinsights.com/job/cbi/job/release/96/"
+  }
+}

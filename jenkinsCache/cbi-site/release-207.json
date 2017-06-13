@@ -1,0 +1,132 @@
+{
+  "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+  "actions": [
+    {
+      "_class": "hudson.model.CauseAction",
+      "causes": [
+        {
+          "_class": "jenkins.branch.BranchIndexingCause",
+          "shortDescription": "Branch indexing"
+        }
+      ]
+    },
+    {
+      "_class": "jenkins.metrics.impl.TimeInQueueAction"
+    },
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.cps.EnvActionImpl"
+    },
+    {},
+    {},
+    {
+      "_class": "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName": {
+        "release": {
+          "_class": "hudson.plugins.git.util.Build",
+          "buildNumber": 207,
+          "buildResult": null,
+          "marked": {
+            "SHA1": "e5d186ba063a0ed2724f729eb3cc316fea90cd73",
+            "branch": [
+              {
+                "SHA1": "e5d186ba063a0ed2724f729eb3cc316fea90cd73",
+                "name": "release"
+              }
+            ]
+          },
+          "revision": {
+            "SHA1": "e5d186ba063a0ed2724f729eb3cc316fea90cd73",
+            "branch": [
+              {
+                "SHA1": "e5d186ba063a0ed2724f729eb3cc316fea90cd73",
+                "name": "release"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision": {
+        "SHA1": "e5d186ba063a0ed2724f729eb3cc316fea90cd73",
+        "branch": [
+          {
+            "SHA1": "e5d186ba063a0ed2724f729eb3cc316fea90cd73",
+            "name": "release"
+          }
+        ]
+      },
+      "remoteUrls": [
+        "git@github.com:cbinsights/cbi-site"
+      ],
+      "scmName": ""
+    },
+    {
+      "_class": "hudson.plugins.git.GitTagAction"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.views.FlowGraphAction"
+    },
+    {},
+    {}
+  ],
+  "artifacts": [],
+  "building": false,
+  "description": null,
+  "displayName": "#207",
+  "duration": 911577,
+  "estimatedDuration": 815775,
+  "executor": null,
+  "fullDisplayName": "CBI-Site » release #207",
+  "id": "207",
+  "keepLog": false,
+  "number": 207,
+  "queueId": 1258,
+  "result": "SUCCESS",
+  "timestamp": 1496954054540,
+  "url": "https://jenkins.cbinsights.com/job/cbi-site/job/release/207/",
+  "changeSets": [
+    {
+      "_class": "hudson.plugins.git.GitChangeSetList",
+      "items": [
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/containers/home/SingleCollection.js"
+          ],
+          "commitId": "40f7129a90381ef5d8841b67b12e22a44d9bc59a",
+          "timestamp": 1496347823000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/cliu",
+            "fullName": "Connie Liu"
+          },
+          "authorEmail": "cliu@cbinsights.com",
+          "comment": "fix the clicking for members tab\n",
+          "date": "2017-06-01 16:10:23 -0400",
+          "id": "40f7129a90381ef5d8841b67b12e22a44d9bc59a",
+          "msg": "fix the clicking for members tab",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/SingleCollection.js"
+            }
+          ]
+        }
+      ],
+      "kind": "git"
+    }
+  ],
+  "nextBuild": {
+    "number": 208,
+    "url": "https://jenkins.cbinsights.com/job/cbi-site/job/release/208/"
+  },
+  "previousBuild": {
+    "number": 206,
+    "url": "https://jenkins.cbinsights.com/job/cbi-site/job/release/206/"
+  }
+}

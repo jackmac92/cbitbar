@@ -1,0 +1,59 @@
+{
+  "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+  "actions": [
+    {
+      "_class": "hudson.model.CauseAction",
+      "causes": [
+        {
+          "_class": "hudson.model.Cause$UpstreamCause",
+          "shortDescription": "Started by upstream project \"cbi-site/develop\" build number 327",
+          "upstreamBuild": 327,
+          "upstreamProject": "cbi-site/develop",
+          "upstreamUrl": "job/cbi-site/job/develop/"
+        }
+      ]
+    },
+    {
+      "_class": "jenkins.metrics.impl.TimeInQueueAction"
+    },
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.cps.EnvActionImpl"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.views.FlowGraphAction"
+    },
+    {},
+    {}
+  ],
+  "artifacts": [],
+  "building": false,
+  "description": null,
+  "displayName": "#266",
+  "duration": 550307,
+  "estimatedDuration": 1220356,
+  "executor": null,
+  "fullDisplayName": "Tests » Integration » CBI-Site » selenium-grid-dev #266",
+  "id": "266",
+  "keepLog": false,
+  "number": 266,
+  "queueId": 1756,
+  "result": "FAILURE",
+  "timestamp": 1497305486007,
+  "url": "https://jenkins.cbinsights.com/job/tests/job/integration/job/cbi-site/job/selenium-grid-dev/266/",
+  "changeSets": [],
+  "nextBuild": {
+    "number": 267,
+    "url": "https://jenkins.cbinsights.com/job/tests/job/integration/job/cbi-site/job/selenium-grid-dev/267/"
+  },
+  "previousBuild": {
+    "number": 265,
+    "url": "https://jenkins.cbinsights.com/job/tests/job/integration/job/cbi-site/job/selenium-grid-dev/265/"
+  }
+}

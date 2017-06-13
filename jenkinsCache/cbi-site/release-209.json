@@ -1,0 +1,134 @@
+{
+  "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+  "actions": [
+    {
+      "_class": "hudson.model.CauseAction",
+      "causes": [
+        {
+          "_class": "hudson.model.Cause$UserIdCause",
+          "shortDescription": "Started by user Jack McCown",
+          "userId": "jmccown",
+          "userName": "Jack McCown"
+        }
+      ]
+    },
+    {
+      "_class": "jenkins.metrics.impl.TimeInQueueAction"
+    },
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.cps.EnvActionImpl"
+    },
+    {},
+    {},
+    {
+      "_class": "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName": {
+        "release": {
+          "_class": "hudson.plugins.git.util.Build",
+          "buildNumber": 209,
+          "buildResult": null,
+          "marked": {
+            "SHA1": "e5d186ba063a0ed2724f729eb3cc316fea90cd73",
+            "branch": [
+              {
+                "SHA1": "e5d186ba063a0ed2724f729eb3cc316fea90cd73",
+                "name": "release"
+              }
+            ]
+          },
+          "revision": {
+            "SHA1": "e5d186ba063a0ed2724f729eb3cc316fea90cd73",
+            "branch": [
+              {
+                "SHA1": "e5d186ba063a0ed2724f729eb3cc316fea90cd73",
+                "name": "release"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision": {
+        "SHA1": "e5d186ba063a0ed2724f729eb3cc316fea90cd73",
+        "branch": [
+          {
+            "SHA1": "e5d186ba063a0ed2724f729eb3cc316fea90cd73",
+            "name": "release"
+          }
+        ]
+      },
+      "remoteUrls": [
+        "git@github.com:cbinsights/cbi-site"
+      ],
+      "scmName": ""
+    },
+    {
+      "_class": "hudson.plugins.git.GitTagAction"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.views.FlowGraphAction"
+    },
+    {},
+    {}
+  ],
+  "artifacts": [],
+  "building": false,
+  "description": null,
+  "displayName": "#209",
+  "duration": 266254,
+  "estimatedDuration": 815775,
+  "executor": null,
+  "fullDisplayName": "CBI-Site » release #209",
+  "id": "209",
+  "keepLog": false,
+  "number": 209,
+  "queueId": 1322,
+  "result": "FAILURE",
+  "timestamp": 1496956089439,
+  "url": "https://jenkins.cbinsights.com/job/cbi-site/job/release/209/",
+  "changeSets": [
+    {
+      "_class": "hudson.plugins.git.GitChangeSetList",
+      "items": [
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/collections/containers/home/item-pages/common/BackButton.js"
+          ],
+          "commitId": "33f464a84603c6b4386a66e418c53abd7c36f046",
+          "timestamp": 1496417876000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/lzhu",
+            "fullName": "Tim Zhu"
+          },
+          "authorEmail": "zhuleijia@gmail.com",
+          "comment": "quick fix arrow left css\n",
+          "date": "2017-06-02 11:37:56 -0400",
+          "id": "33f464a84603c6b4386a66e418c53abd7c36f046",
+          "msg": "quick fix arrow left css",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/modules/collections/containers/home/item-pages/common/BackButton.js"
+            }
+          ]
+        }
+      ],
+      "kind": "git"
+    }
+  ],
+  "nextBuild": {
+    "number": 210,
+    "url": "https://jenkins.cbinsights.com/job/cbi-site/job/release/210/"
+  },
+  "previousBuild": {
+    "number": 208,
+    "url": "https://jenkins.cbinsights.com/job/cbi-site/job/release/208/"
+  }
+}

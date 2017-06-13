@@ -1,0 +1,137 @@
+{
+  "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+  "actions": [
+    {
+      "_class": "hudson.model.CauseAction",
+      "causes": [
+        {
+          "_class": "jenkins.branch.BranchIndexingCause",
+          "shortDescription": "Branch indexing"
+        }
+      ]
+    },
+    {
+      "_class": "jenkins.metrics.impl.TimeInQueueAction"
+    },
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.cps.EnvActionImpl"
+    },
+    {},
+    {},
+    {
+      "_class": "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName": {
+        "develop": {
+          "_class": "hudson.plugins.git.util.Build",
+          "buildNumber": 328,
+          "buildResult": null,
+          "marked": {
+            "SHA1": "02cf3c5779774093f2a5964e872f33dc7c653f04",
+            "branch": [
+              {
+                "SHA1": "02cf3c5779774093f2a5964e872f33dc7c653f04",
+                "name": "develop"
+              }
+            ]
+          },
+          "revision": {
+            "SHA1": "02cf3c5779774093f2a5964e872f33dc7c653f04",
+            "branch": [
+              {
+                "SHA1": "02cf3c5779774093f2a5964e872f33dc7c653f04",
+                "name": "develop"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision": {
+        "SHA1": "02cf3c5779774093f2a5964e872f33dc7c653f04",
+        "branch": [
+          {
+            "SHA1": "02cf3c5779774093f2a5964e872f33dc7c653f04",
+            "name": "develop"
+          }
+        ]
+      },
+      "remoteUrls": [
+        "git@github.com:cbinsights/cbi-site"
+      ],
+      "scmName": ""
+    },
+    {
+      "_class": "hudson.plugins.git.GitTagAction"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.views.FlowGraphAction"
+    },
+    {},
+    {}
+  ],
+  "artifacts": [],
+  "building": false,
+  "description": null,
+  "displayName": "#328",
+  "duration": 503697,
+  "estimatedDuration": 504806,
+  "executor": null,
+  "fullDisplayName": "CBI-Site » develop #328",
+  "id": "328",
+  "keepLog": false,
+  "number": 328,
+  "queueId": 2083,
+  "result": "SUCCESS",
+  "timestamp": 1497363814297,
+  "url": "https://jenkins.cbinsights.com/job/cbi-site/job/develop/328/",
+  "changeSets": [
+    {
+      "_class": "hudson.plugins.git.GitChangeSetList",
+      "items": [
+        {
+          "_class": "hudson.plugins.git.GitChangeSet",
+          "affectedPaths": [
+            "src/client/modules/top-search/utils/updateNavbarWidth.js",
+            "src/client/component-library/navigation/SideNav/ItemContent/itemContent.css"
+          ],
+          "commitId": "0bb68a0b7639d4a1e0358c49821f893ddfbffbc6",
+          "timestamp": 1497363765000,
+          "author": {
+            "absoluteUrl": "https://jenkins.cbinsights.com/user/jdalton",
+            "fullName": "Justin Dalton"
+          },
+          "authorEmail": "jdalton@cbinsights.com",
+          "comment": "more nav sizing and gutter tweaks\n",
+          "date": "2017-06-13 10:22:45 -0400",
+          "id": "0bb68a0b7639d4a1e0358c49821f893ddfbffbc6",
+          "msg": "more nav sizing and gutter tweaks",
+          "paths": [
+            {
+              "editType": "edit",
+              "file": "src/client/component-library/navigation/SideNav/ItemContent/itemContent.css"
+            },
+            {
+              "editType": "edit",
+              "file": "src/client/modules/top-search/utils/updateNavbarWidth.js"
+            }
+          ]
+        }
+      ],
+      "kind": "git"
+    }
+  ],
+  "nextBuild": {
+    "number": 329,
+    "url": "https://jenkins.cbinsights.com/job/cbi-site/job/develop/329/"
+  },
+  "previousBuild": {
+    "number": 327,
+    "url": "https://jenkins.cbinsights.com/job/cbi-site/job/develop/327/"
+  }
+}

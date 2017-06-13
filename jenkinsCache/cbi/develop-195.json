@@ -1,0 +1,101 @@
+{
+  "_class": "org.jenkinsci.plugins.workflow.job.WorkflowRun",
+  "actions": [
+    {
+      "_class": "hudson.model.CauseAction",
+      "causes": [
+        {
+          "_class": "hudson.model.Cause$UserIdCause",
+          "shortDescription": "Started by user Jake Weiner",
+          "userId": "jweiner",
+          "userName": "Jake Weiner"
+        }
+      ]
+    },
+    {
+      "_class": "jenkins.metrics.impl.TimeInQueueAction"
+    },
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.cps.EnvActionImpl"
+    },
+    {},
+    {},
+    {
+      "_class": "hudson.plugins.git.util.BuildData",
+      "buildsByBranchName": {
+        "develop": {
+          "_class": "hudson.plugins.git.util.Build",
+          "buildNumber": 195,
+          "buildResult": null,
+          "marked": {
+            "SHA1": "1f5994abfed959e075413d9ec1b9715c4fbd459a",
+            "branch": [
+              {
+                "SHA1": "1f5994abfed959e075413d9ec1b9715c4fbd459a",
+                "name": "develop"
+              }
+            ]
+          },
+          "revision": {
+            "SHA1": "1f5994abfed959e075413d9ec1b9715c4fbd459a",
+            "branch": [
+              {
+                "SHA1": "1f5994abfed959e075413d9ec1b9715c4fbd459a",
+                "name": "develop"
+              }
+            ]
+          }
+        }
+      },
+      "lastBuiltRevision": {
+        "SHA1": "1f5994abfed959e075413d9ec1b9715c4fbd459a",
+        "branch": [
+          {
+            "SHA1": "1f5994abfed959e075413d9ec1b9715c4fbd459a",
+            "name": "develop"
+          }
+        ]
+      },
+      "remoteUrls": [
+        "git@github.com:cbinsights/cbi"
+      ],
+      "scmName": ""
+    },
+    {
+      "_class": "hudson.plugins.git.GitTagAction"
+    },
+    {},
+    {},
+    {},
+    {},
+    {},
+    {
+      "_class": "org.jenkinsci.plugins.workflow.job.views.FlowGraphAction"
+    },
+    {},
+    {}
+  ],
+  "artifacts": [],
+  "building": false,
+  "description": null,
+  "displayName": "#195",
+  "duration": 222501,
+  "estimatedDuration": 542624,
+  "executor": null,
+  "fullDisplayName": "Repo: CBI » develop #195",
+  "id": "195",
+  "keepLog": false,
+  "number": 195,
+  "queueId": 1658,
+  "result": "SUCCESS",
+  "timestamp": 1497299810236,
+  "url": "https://jenkins.cbinsights.com/job/cbi/job/develop/195/",
+  "changeSets": [],
+  "nextBuild": null,
+  "previousBuild": {
+    "number": 194,
+    "url": "https://jenkins.cbinsights.com/job/cbi/job/develop/194/"
+  }
+}
