@@ -12,10 +12,10 @@ insertSheBang() {
 
 installMonitor() {
     yarn
-    webpack plugins/jenkinsStatus bitbar.5m.js --config webpack.config.js --optimize-minimize
-    insertSheBang bitbar.5m.js
-    mv -f bitbar.5m.js ~/bitbar
-    sudo chmod +x ~/bitbar/bitbar.5m.js
+    webpack plugins/jenkinsStatus bitbar.20s.js --config webpack.config.js --optimize-minimize
+    insertSheBang bitbar.20s.js
+    mv -f bitbar.20s.js ~/bitbar
+    sudo chmod +x ~/bitbar/bitbar.20s.js
 }
 
 installBitBar() {
