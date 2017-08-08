@@ -33,6 +33,10 @@ installBitBar() {
 
 git pull --recurse-submodules
 
+which rollup || npm i -g rollup
+which webpack || npm i -g webpack
+which yarn || npm i -g yarn
+
 cleanUp
 installMonitor
 installBitBar

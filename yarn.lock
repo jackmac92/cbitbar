@@ -628,7 +628,7 @@ caseless@~0.12.0:
   version "0.12.0"
   resolved "https://npm.jackmac.party/caseless/-/caseless-0.12.0.tgz#1b681c21ff84033c826543090689420d187151dc"
 
-cbiJenkins@^4.0.1:
+cbiJenkins@^5.1.0:
   version "5.1.0"
   resolved "https://npm.jackmac.party/cbiJenkins/-/cbiJenkins-5.1.0.tgz#3df5587bdfb86ba4ace90a9ef7759145fa61937c"
   dependencies:
