@@ -10,6 +10,12 @@ insertSheBang() {
     echo "#! /usr/bin/env $nodePath" | cat - "$1" > temp && mv -f temp "$1"
 }
 
+installSSH() {
+    webpack plugins/serverJump serverjump.5m.js --config webpack.config.js --optimize-minimize
+    insertSheBang serverjump.5m.js
+    mv -f serverjump.5m.js ~/bitbar
+    sudo chmod +x ~/bitbar/serverjump.5m.js
+}
 installMonitor() {
     yarn
     webpack plugins/jenkinsStatus bitbar.20s.js --config webpack.config.js --optimize-minimize
@@ -32,11 +38,12 @@ installBitBar() {
 }
 
 git pull --recurse-submodules
+git submodule foreach yarn
 
 which rollup || npm i -g rollup
 which webpack || npm i -g webpack
 which yarn || npm i -g yarn
 
 cleanUp
-installMonitor
+installSSH
 installBitBar
