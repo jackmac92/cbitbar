@@ -31,6 +31,8 @@ installBitBar() {
     open -a BitBar
 }
 
+git pull --recurse-submodules
+
 cleanUp
 installMonitor
 installBitBar
