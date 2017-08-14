@@ -45,7 +45,8 @@ installBitBar() {
     open -a BitBar
 }
 
-git pull --recurse-submodules
+git submodule init
+git submodule update --remote 
 git submodule foreach yarn
 
 if [[ -z $JENKINS_USERNAME ]]; then
