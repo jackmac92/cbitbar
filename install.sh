@@ -1,4 +1,4 @@
-#! /bin/bash -exu
+#! /bin/bash
 
 cleanUp() {
     rm -rf ~/bitbar
@@ -8,6 +8,14 @@ cleanUp() {
 insertSheBang() {
     nodePath=$(which node)
     echo "#! /usr/bin/env $nodePath" | cat - "$1" > temp && mv -f temp "$1"
+}
+
+installPlugin() {
+    outputName="$1.$2.js"
+    webpack "plugins/$1" "$outputName" --config webpack.config.js --optimize-minimize
+    insertSheBang "$outputName"
+    sudo chmod +x "$outputName"
+    mv -f "$outputName" ~/bitbar
 }
 
 installSSH() {
@@ -40,10 +48,18 @@ installBitBar() {
 git pull --recurse-submodules
 git submodule foreach yarn
 
-which rollup || npm i -g rollup
-which webpack || npm i -g webpack
-which yarn || npm i -g yarn
+if [[ -z $JENKINS_USERNAME ]]; then
+    echo "You need to set JENKINS_USERNAME"
+    exit 1
+fi
+
+if [[ -z $JENKINS_PASSWORD ]]; then
+    echo "You need to set JENKINS_PASSWORD"
+    exit 1
+fi
 
 cleanUp
-installSSH
+set -ex
+installPlugin "jenkinsStatus" "15s"
+installPlugin "serverJump" "10m"
 installBitBar

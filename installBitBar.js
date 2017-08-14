@@ -12,12 +12,12 @@ const getRepoInfo = repo =>
   axios.get(`https://api.github.com/repos/${repo}/releases/latest`);
 
 const findAssetUrl = ({ data: allAssets }) =>
-  allAssets.filter(a => !a.name.includes('Distro'))[0].url;
+  allAssets.filter(a => !a.name.includes('Distro'))[0].browser_download_url;
 
 const downloadZip = url =>
-  axios({ url, method: 'get', responseType: 'stream' }).then(response => {
-    response.data.pipe(fs.createWriteStream('./output/bitbar.zip'));
-  });
+  axios({ url, method: 'get', responseType: 'stream' }).then(response =>
+    response.data.pipe(fs.createWriteStream('./bitbar.zip'))
+  );
 
 const task = new Listr([
   {
@@ -36,9 +36,9 @@ const task = new Listr([
   },
   {
     title: 'Downloading',
-    task: ctx => downloadZip(ctx.downloadUrl)
+    task: ctx => downloadZip(ctx.downloadUrl).then(console.log)
   }
-  // ,{
+  // {
   //   title: 'Unzipping',
   //   task: ctx =>
   //     exec('unzip ./output/bitbar.zip').then(console.log).catch(console.log)
