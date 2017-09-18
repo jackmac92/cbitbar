@@ -42,6 +42,7 @@ npm install
 which yarn || npm i -g yarn
 
 git submodule init
+git submodule update --remote
 git submodule foreach "git checkout master && git pull"
 git submodule foreach "yarn"
 
