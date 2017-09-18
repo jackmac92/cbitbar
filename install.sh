@@ -12,9 +12,16 @@ insertSheBang() {
 
 installPlugin() {
     outputName="$1.$2.js"
-    node_modules/.bin/webpack "plugins/$1" "$outputName" --config webpack.config.js --optimize-minimize
-    insertSheBang "$outputName"
-    sudo chmod +x "$outputName"
+    cd "plugins/$1"
+    npm run build
+    cd ../..
+    mv "plugins/$1/bundle.js" "$outputName"
+    if [[ -z "$3" ]]; then
+        echo "Skipping JS modifications"
+    else
+        insertSheBang "$outputName"
+        sudo chmod +x "$outputName"
+    fi
     mv -f "$outputName" ~/bitbar
 }
 
@@ -35,7 +42,7 @@ npm install
 which yarn || npm i -g yarn
 
 git submodule init
-git submodule update --remote
+git submodule foreach "git checkout master && git pull"
 git submodule foreach "yarn"
 
 if [[ -z $JENKINS_USERNAME ]]; then
@@ -50,6 +57,7 @@ fi
 
 cleanUp
 set -ex
-installPlugin "jenkinsStatus" "15s"
-installPlugin "serverJump" "10m"
+installPlugin "jenkinsStatus" "15s" 1
+installPlugin "serverJump" "10m" 1
+installPlugin "jira" "30m"
 installBitBar
