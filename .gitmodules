@@ -4,6 +4,6 @@
 [submodule "plugins/serverJump"]
 	path = plugins/serverJump
 	url = git@github.com:jackmac92/serverJump.git
-[submodule "plugins/tickets"]
-	path = plugins/tickets
+[submodule "plugins/jira"]
+	path = plugins/jira
 	url = git@github.com:jackmac92/jiraBitbar.git
