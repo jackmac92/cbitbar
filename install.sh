@@ -1,28 +1,10 @@
 #! /bin/bash
 
+export BITBAR_PLUGIN_DIR="$HOME/bitbar"
+
 cleanUp() {
     rm -rf ~/bitbar
     mkdir  ~/bitbar
-}
-
-insertSheBang() {
-    nodePath=$(which node)
-    echo "#! /usr/bin/env $nodePath" | cat - "$1" > temp && mv -f temp "$1"
-}
-
-installPlugin() {
-    outputName="$1.$2.js"
-    cd "plugins/$1"
-    npm run build
-    cd ../..
-    mv "plugins/$1/bundle.js" "$outputName"
-    if [[ -z "$3" ]]; then
-        echo "Skipping JS modifications"
-    else
-        insertSheBang "$outputName"
-        sudo chmod +x "$outputName"
-    fi
-    mv -f "$outputName" ~/bitbar
 }
 
 installBitBar() {
@@ -38,13 +20,6 @@ installBitBar() {
     open -a BitBar
 }
 
-npm install
-which yarn || npm i -g yarn
-
-git submodule init
-git submodule foreach "git checkout master && git pull"
-git submodule foreach "yarn"
-
 if [[ -z $JENKINS_USERNAME ]]; then
     echo "You need to set JENKINS_USERNAME"
     exit 1
@@ -56,8 +31,12 @@ if [[ -z $JENKINS_PASSWORD ]]; then
 fi
 
 cleanUp
+which yarn || npm i -g yarn
+yarn install
 set -ex
-installPlugin "jenkinsStatus" "15s" 1
-installPlugin "serverJump" "10m" 1
-installPlugin "jira" "30m"
+
+git submodule init
+git submodule update --remote
+git submodule foreach "git checkout master && git pull && yarn run bitBuild"
+
 installBitBar
