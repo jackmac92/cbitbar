@@ -3,7 +3,7 @@
 export BITBAR_PLUGIN_DIR="$HOME/bitbar"
 
 cleanUp() {
-    rm -rf ~/bitbar
+    [ -d ~/bitbar ] && rm -rf ~/bitbar
     mkdir  ~/bitbar
 }
 
@@ -14,6 +14,26 @@ fi
 
 if [[ -z $JENKINS_PASSWORD ]]; then
     echo "You need to set JENKINS_PASSWORD"
+    exit 1
+fi
+
+if [[ -z $JIRA_USERNAME ]]; then
+    echo "You need to set JIRA_USERNAME"
+    exit 1
+fi
+
+if [[ -z $JIRA_PASSWORD ]]; then
+    echo "You need to set JIRA_PASSWORD"
+    exit 1
+fi
+
+if [[ -z $CRUCIBLE_USERNAME ]]; then
+    echo "You need to set CRUCIBLE_USERNAME"
+    exit 1
+fi
+
+if [[ -z $CRUCIBLE_PASSWORD ]]; then
+    echo "You need to set CRUCIBLE_PASSWORD"
     exit 1
 fi
 
@@ -36,4 +56,3 @@ defaults write com.matryer.BitBar appHasRun -bool false
 defaults write com.matryer.BitBar userConfigDisabled -bool false
 
 open -a BitBar
-
