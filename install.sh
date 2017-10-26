@@ -39,6 +39,7 @@ fi
 
 cleanUp
 which yarn || npm i -g yarn
+which nestor || npm i -g nestor
 yarn install
 set -ex
 
