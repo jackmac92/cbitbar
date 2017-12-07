@@ -1,9 +1,6 @@
 [submodule "plugins/jenkinsStatus"]
 	path = plugins/jenkinsStatus
 	url = git@github.com:jackmac92/cbiStatusLights.git 
-[submodule "plugins/serverJump"]
-	path = plugins/serverJump
-	url = git@github.com:jackmac92/serverJump.git
 [submodule "plugins/jira"]
 	path = plugins/jira
 	url = git@github.com:jackmac92/jiraBitbar.git
